@@ -49,53 +49,53 @@ Productions
 
 // l'axiome
 
-programme = {listedeclarationvariable} ldv {listedeclarationfonction} ldf ;
-ldv = {declarationvariable} dv {listedeclarationvariablebis} ldvbis
+programme = {listedeclarationvariable}ldv {listedeclarationfonction}ldf ;
+ldv = {declarationvariable}dv {listedeclarationvariablebis}ldvbis
     |;
-ldvbis = virgule dv ldvbis
+ldvbis = virgule {declarationvariable}dv {listedeclarationvariablebis}ldvbis
     |;
-dv = {typevariable} tv identif
-    | tv identif crochetgauche nombre crochetdroit;
-ldf = {declarationfonction} df ldf
+dv = {typevariable}tv identif
+    | {typevariable}tv identif crochetgauche nombre crochetdroit;
+ldf = {declarationfonction}df {listedeclarationfonction}ldf
     |;
-df = {typeoptionel} to identif(ldv) ldv {blocinstruction} bi;
+df = {typeoptionel}to identif parenthesegauche {listedeclarationvariable}ldv parenthesedroite {listedeclarationvariable}ldv {blocinstruction}bi;
 to = tv
     |;
-bi = accoladegauche {listeinstruction} li accoladedroite;
-li = {instruction} i li
+bi = accoladegauche {listeinstruction}li accoladedroite;
+li = {instruction}i {listeinstruction}li
     |;
-i = {variable} var egal {expression} exp pointvirgule
-    | tantque exp faire bi
-    | si exp alors bi
-    | si exp alors bi sinon bi
-    | retour exp pointvirgule pointvirgule
-    | ecrire parenthesegauche exp parenthesedroite pointvirgule
-    | identif parenthesegauche {listeexpression} lexp parenthesedroite pointvirgule;
-lexp = exp lexpbis
+i = {variable}var egal {expression}exp pointvirgule
+    | tantque {expression}exp faire {blocinstruction}bi
+    | si {expression}exp alors {blocinstruction}bi
+    | si {expression}exp alors {blocinstruction}bi sinon {blocinstruction}bi
+    | retour {expression}exp pointvirgule pointvirgule
+    | ecrire parenthesegauche {expression}exp parenthesedroite pointvirgule
+    | identif parenthesegauche {listeexpression}lexp parenthesedroite pointvirgule;
+lexp = {expression}exp {listeexpressionbis}lexpbis
     |;
-lexpbis = virgule exp lexpbis
+lexpbis = virgule {expression}exp {listeexpressionbis}lexpbis
     |;
-exp = exp ou {et} e1
-    | e1;
-e1 = e1 et {egalinf}e2
-    | e2;
-e2 = e2 egal {plusmoins}e3
-    | e2 inf e3
-    | e3;
-e3 = e3 plus {muldiv}e4
-    | e3 moins e4
-    | e4;
-e4 = e4 mul {negation}e5
-    | e4 div e5
-    | e5;
-e5 = non e5
+exp = {expression}exp ou {et}e1
+    | {et}e1;
+e1 = {et}e1 et {egalinf}e2
+    | {egalinf}e2;
+e2 = {egalinf}e2 egal {plusmoins}e3
+    | {egalinf}e2 inf {plusmoins}e3
+    | {plusmoins}e3;
+e3 = {plusmoins}e3 plus {muldiv}e4
+    | {plusmoins}e3 moins {muldiv}e4
+    | {muldiv}e4;
+e4 = {muldiv}e4 mul {negation}e5
+    | {muldiv}e4 div {negation}e5
+    | {negation}e5;
+e5 = non {negation}e5
     | {terminalexpression}e6;
-e6 = parenthesegauche exp parenthesedroite
-    | var
+e6 = parenthesegauche {expression}exp parenthesedroite
+    | {variable}var
     | nombre
-    | identif parenthesegauche lexp parenthesedroite
+    | identif parenthesegauche {listeexpression}lexp parenthesedroite
     | lire
     | vrai
     | faux
 var = identif
-    | identif crochetgauche exp crochetdroit
+    | identif crochetgauche {expression}exp crochetdroit
