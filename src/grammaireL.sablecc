@@ -12,8 +12,34 @@ Tokens
 espaces = (' ' | 13 | 10)+;
 commentaire= '#' [[0 .. 0xffff] - [10 + 13]]* (10 | 13 | 10 13);
 virgule = ',';
+pointvirgule = ';';
 nombre = chiffre+;
 identif = alpha alphanum*;
+parenthesegauche = '(';
+parenthesedroite = ')';
+crochetgauche = '[';
+crochetdroit = ']';
+accoladegauche = '{';
+accoladedroite = '}';
+egal = '=';
+plus = '+';
+moins = '-';
+mul = '*';
+div = '/';
+inf = '<';
+ou = '|';
+et = '&';
+non = '!';
+lire = 'lire()'; # verifier les fonctions
+ecrire = 'ecrire';
+retour = 'retour';
+vrai = 'vrai';
+faux = 'faux';
+tantque = 'tantque';
+faire = 'faire';
+si = 'si';
+alors = 'alors';
+sinon = 'sinon';
 
 Ignored Tokens
 
@@ -23,6 +49,53 @@ Productions
 
 // l'axiome
 
-programme = listedecvar listedecfonc ;
-
-
+programme = {listedeclarationvariable} ldv {listedeclarationfonction} ldf ;
+ldv = {declarationvariable} dv {listedeclarationvariablebis} ldvbis
+    |;
+ldvbis = virgule dv ldvbis
+    |;
+dv = {typevariable} tv identif
+    | tv identif crochetgauche nombre crochetdroit;
+ldf = {declarationfonction} df ldf
+    |;
+df = {typeoptionel} to identif(ldv) ldv {blocinstruction} bi;
+to = tv
+    |;
+bi = accoladegauche {listeinstruction} li accoladedroite;
+li = {instruction} i li
+    |;
+i = {variable} var egal {expression} exp pointvirgule
+    | tantque exp faire bi
+    | si exp alors bi
+    | si exp alors bi sinon bi
+    | retour exp pointvirgule pointvirgule
+    | ecrire parenthesegauche exp parenthesedroite pointvirgule
+    | identif parenthesegauche {listeexpression} lexp parenthesedroite pointvirgule;
+lexp = exp lexpbis
+    |;
+lexpbis = virgule exp lexpbis
+    |;
+exp = exp ou {et} e1
+    | e1;
+e1 = e1 et {egalinf}e2
+    | e2;
+e2 = e2 egal {plusmoins}e3
+    | e2 inf e3
+    | e3;
+e3 = e3 plus {muldiv}e4
+    | e3 moins e4
+    | e4;
+e4 = e4 mul {negation}e5
+    | e4 div e5
+    | e5;
+e5 = non e5
+    | {terminalexpression}e6;
+e6 = parenthesegauche exp parenthesedroite
+    | var
+    | nombre
+    | identif parenthesegauche lexp parenthesedroite
+    | lire
+    | vrai
+    | faux
+var = identif
+    | identif crochetgauche exp crochetdroit
