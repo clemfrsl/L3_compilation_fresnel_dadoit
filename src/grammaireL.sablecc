@@ -10,11 +10,10 @@ alphanum = [lettre + chiffre];
 Tokens
 
 espaces = (' ' | 13 | 10)+;
-commentaire= '#' [[0 .. 0xffff] - [10 + 13]]* (10 | 13 | 10 13);
+commentaire = '#' [[0 .. 0xffff] - [10 + 13]]* (10 | 13 | 10 13);
 virgule = ',';
 pointvirgule = ';';
 nombre = chiffre+;
-identif = alpha alphanum*;
 parenthesegauche = '(';
 parenthesedroite = ')';
 crochetgauche = '[';
@@ -30,7 +29,7 @@ inf = '<';
 ou = '|';
 et = '&';
 non = '!';
-lire = 'lire()'; # verifier les fonctions
+lire = 'lire';
 ecrire = 'ecrire';
 retour = 'retour';
 vrai = 'vrai';
@@ -40,6 +39,7 @@ faire = 'faire';
 si = 'si';
 alors = 'alors';
 sinon = 'sinon';
+identif = alpha alphanum*;
 
 Ignored Tokens
 
@@ -49,53 +49,57 @@ Productions
 
 // l'axiome
 
-programme = {listedeclarationvariable}ldv {listedeclarationfonction}ldf ;
-ldv = {declarationvariable}dv {listedeclarationvariablebis}ldvbis
+programme = ldv ldf ;
+ldv = {declarationvariable1} dv ldvbis
     |;
-ldvbis = virgule {declarationvariable}dv {listedeclarationvariablebis}ldvbis
+ldvbis = {declarationvariable2} virgule dv ldvbis
     |;
-dv = {typevariable}tv identif
-    | {typevariable}tv identif crochetgauche nombre crochetdroit;
-ldf = {declarationfonction}df {listedeclarationfonction}ldf
+dv = {typevariable3} tv identif
+    | {typevariable4} tv identif crochetgauche nombre crochetdroit;
+ldf = {declarationfonction5} df ldf
     |;
-df = {typeoptionel}to identif parenthesegauche {listedeclarationvariable}ldv parenthesedroite {listedeclarationvariable}ldv {blocinstruction}bi;
+df = {typeoptionel6} to identif parenthesegauche [premier]:ldv parenthesedroite [second]:ldv bi;
 to = tv
     |;
-bi = accoladegauche {listeinstruction}li accoladedroite;
-li = {instruction}i {listeinstruction}li
+bi = accoladegauche li accoladedroite;
+li = {instruction7} inst li
     |;
-i = {variable}var egal {expression}exp pointvirgule
-    | tantque {expression}exp faire {blocinstruction}bi
-    | si {expression}exp alors {blocinstruction}bi
-    | si {expression}exp alors {blocinstruction}bi sinon {blocinstruction}bi
-    | retour {expression}exp pointvirgule pointvirgule
-    | ecrire parenthesegauche {expression}exp parenthesedroite pointvirgule
-    | identif parenthesegauche {listeexpression}lexp parenthesedroite pointvirgule;
-lexp = {expression}exp {listeexpressionbis}lexpbis
+inst = {variable8} var egal exp pointvirgule
+    | {9} tantque exp faire bi
+    | {10} si exp alors bi
+    | {11} si exp alors [premier]:bi sinon [second]:bi
+    | {12} retour exp pointvirgule
+    | {13} ecrire parenthesegauche exp parenthesedroite pointvirgule
+    | {14} identif parenthesegauche lexp parenthesedroite pointvirgule;
+lexp = {15} exp lexpbis
     |;
-lexpbis = virgule {expression}exp {listeexpressionbis}lexpbis
+lexpbis = {16} virgule exp lexpbis
     |;
-exp = {expression}exp ou {et}e1
-    | {et}e1;
-e1 = {et}e1 et {egalinf}e2
-    | {egalinf}e2;
-e2 = {egalinf}e2 egal {plusmoins}e3
-    | {egalinf}e2 inf {plusmoins}e3
-    | {plusmoins}e3;
-e3 = {plusmoins}e3 plus {muldiv}e4
-    | {plusmoins}e3 moins {muldiv}e4
-    | {muldiv}e4;
-e4 = {muldiv}e4 mul {negation}e5
-    | {muldiv}e4 div {negation}e5
-    | {negation}e5;
-e5 = non {negation}e5
-    | {terminalexpression}e6;
-e6 = parenthesegauche {expression}exp parenthesedroite
-    | {variable}var
-    | nombre
-    | identif parenthesegauche {listeexpression}lexp parenthesedroite
-    | lire
-    | vrai
-    | faux
-var = identif
-    | identif crochetgauche {expression}exp crochetdroit
+exp = {17} exp ou e1
+    | {18} e1;
+e1 = {19} e1 et e2
+    | {20} e2;
+e2 = {egalinf21} e2 egal e3
+    | {egalinf22} e2 inf e3
+    | {plusmoins23} e3;
+e3 = {plusmoins24} e3 plus e4
+    | {plusmoins25} e3 moins e4
+    | {muldiv26} e4;
+e4 = {muldiv27} e4 mul e5
+    | {muldiv28} e4 div e5
+    | {negation29} e5;
+e5 = {negation30} non e5
+    | {terminalexpression31} e6;
+e6 = {expression32} parenthesegauche exp parenthesedroite
+    | {variable33} var
+    | {34} nombre
+    | {35} identif parenthesegauche lexp parenthesedroite
+    | {36} lire
+    | {37} vrai
+    | {38} faux;
+var = {39} identif
+    | {40} identif crochetgauche exp crochetdroit;
+
+
+    //nommer les cas {} si ya un ou
+        //quand un truc reviens dans un même cas nommer avec []:
