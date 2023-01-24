@@ -50,56 +50,52 @@ Productions
 // l'axiome
 
 programme = ldv ldf ;
-ldv = {declarationvariable1} dv ldvbis
+ldv = {listedeclarationvariable} dv ldvbis
     |;
-ldvbis = {declarationvariable2} virgule dv ldvbis
+ldvbis = {listedeclarationvariablebis} virgule dv ldvbis
     |;
-dv = {typevariable3} tv identif
-    | {typevariable4} tv identif crochetgauche nombre crochetdroit;
-ldf = {declarationfonction5} df ldf
+dv = {declarationvariableid} tv identif
+    | {declarationvariableidtableau} tv identif crochetgauche nombre crochetdroit;
+ldf = {listedeclarationfonction} df ldf
     |;
-df = {typeoptionel6} to identif parenthesegauche [premier]:ldv parenthesedroite [second]:ldv bi;
-to = tv
+df = to identif parenthesegauche [premier]:ldv parenthesedroite [second]:ldv bi;
+to = {typeoptionel} tv
     |;
 bi = accoladegauche li accoladedroite;
-li = {instruction7} inst li
+li = {listeinstruction} inst li
     |;
-inst = {variable8} var egal exp pointvirgule
-    | {9} tantque exp faire bi
-    | {10} si exp alors bi
-    | {11} si exp alors [premier]:bi sinon [second]:bi
-    | {12} retour exp pointvirgule
-    | {13} ecrire parenthesegauche exp parenthesedroite pointvirgule
-    | {14} identif parenthesegauche lexp parenthesedroite pointvirgule;
-lexp = {15} exp lexpbis
+inst = {assignation} var egal exp pointvirgule
+    | {boucletantque} tantque exp faire bi
+    | {sialors} si exp alors bi
+    | {sialorssinon} si exp alors [premier]:bi sinon [second]:bi
+    | {retour} retour exp pointvirgule
+    | {fonctionecrire} ecrire parenthesegauche exp parenthesedroite pointvirgule
+    | {appelfonction} identif parenthesegauche lexp parenthesedroite pointvirgule;
+lexp = {listeexpr} exp lexpbis
     |;
-lexpbis = {16} virgule exp lexpbis
+lexpbis = {listeexprbis} virgule exp lexpbis
     |;
-exp = {17} exp ou e1
-    | {18} e1;
-e1 = {19} e1 et e2
-    | {20} e2;
-e2 = {egalinf21} e2 egal e3
-    | {egalinf22} e2 inf e3
-    | {plusmoins23} e3;
-e3 = {plusmoins24} e3 plus e4
-    | {plusmoins25} e3 moins e4
-    | {muldiv26} e4;
-e4 = {muldiv27} e4 mul e5
-    | {muldiv28} e4 div e5
-    | {negation29} e5;
-e5 = {negation30} non e5
-    | {terminalexpression31} e6;
-e6 = {expression32} parenthesegauche exp parenthesedroite
-    | {variable33} var
-    | {34} nombre
-    | {35} identif parenthesegauche lexp parenthesedroite
-    | {36} lire
-    | {37} vrai
-    | {38} faux;
-var = {39} identif
-    | {40} identif crochetgauche exp crochetdroit;
-
-
-    //nommer les cas {} si ya un ou
-        //quand un truc reviens dans un même cas nommer avec []:
+exp = {ou} exp ou e1
+    | {pasou} e1;
+e1 = {et} e1 et e2
+    | {paset} e2;
+e2 = {egal} e2 egal e3
+    | {inf} e2 inf e3
+    | {pasegalinf} e3;
+e3 = {plus} e3 plus e4
+    | {moins} e3 moins e4
+    | {pasplusmoins} e4;
+e4 = {mul} e4 mul e5
+    | {div} e4 div e5
+    | {pasmuldiv} e5;
+e5 = {negation} non e5
+    | {pasnegation} e6;
+e6 = {eboucleexpr} parenthesegauche exp parenthesedroite
+    | {evar} var
+    | {enombre} nombre
+    | {efonction} identif parenthesegauche lexp parenthesedroite
+    | {elire} lire
+    | {evrai} vrai
+    | {efaux} faux;
+var = {varidentif} identif
+    | {varfonction} identif crochetgauche exp crochetdroit;
