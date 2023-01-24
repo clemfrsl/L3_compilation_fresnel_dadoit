@@ -58,6 +58,9 @@ dv = {declarationvariableid} tv identif
     | {declarationvariableidtableau} tv identif crochetgauche nombre crochetdroit;
 ldf = {listedeclarationfonction} df ldf
     |;
+tv = {typevrai} vrai
+    | {typefaux} faux
+    | {typeentier} nombre;
 df = to identif parenthesegauche [premier]:ldv parenthesedroite [second]:ldv bi;
 to = {typeoptionel} tv
     |;
