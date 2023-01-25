@@ -13,6 +13,8 @@ espaces = (' ' | 13 | 10)+;
 commentaire = '#' [[0 .. 0xffff] - [10 + 13]]* (10 | 13 | 10 13);
 virgule = ',';
 pointvirgule = ';';
+boolean = 'boolean';
+entier = 'entier';
 nombre = chiffre+;
 parenthesegauche = '(';
 parenthesedroite = ')';
@@ -58,9 +60,8 @@ dv = {declarationvariableid} tv identif
     | {declarationvariableidtableau} tv identif crochetgauche nombre crochetdroit;
 ldf = {listedeclarationfonction} df ldf
     |;
-tv = {typevrai} vrai
-    | {typefaux} faux
-    | {typeentier} nombre;
+tv = {typebool} boolean
+    | {typeentier} entier;
 df = to identif parenthesegauche [premier]:ldv parenthesedroite [second]:ldv bi;
 to = {typeoptionel} tv
     |;
@@ -97,7 +98,7 @@ e6 = {eboucleexpr} parenthesegauche exp parenthesedroite
     | {evar} var
     | {enombre} nombre
     | {efonction} identif parenthesegauche lexp parenthesedroite
-    | {elire} lire
+    | {elire} lire parenthesegauche parenthesedroite
     | {evrai} vrai
     | {efaux} faux;
 var = {varidentif} identif
