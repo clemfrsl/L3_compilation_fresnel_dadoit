@@ -27,20 +27,20 @@ public class Sc2sa extends DepthFirstAdapter
     @Override
     public void caseAListedeclarationvariableLdv(AListedeclarationvariableLdv node)
     {
-        SaExp op1 = null;
-        SaExp op2 = null;
+        SaDecVar op1 = null;
+        SaLDecVar op2 = null;
         inAListedeclarationvariableLdv(node);
         if(node.getDv() != null)
         {
             node.getDv().apply(this);
-            op1 = (SaExp) this.returnValue;
+            op1 = (SaDecVar) this.returnValue;
         }
         if(node.getLdvbis() != null)
         {
             node.getLdvbis().apply(this);
-            op2 = (SaExp) this.returnValue;
+            op2 = (SaLDecVar) this.returnValue;
         }
-        this.returnValue = new SaExpAdd(op1, op2);
+        this.returnValue = new SaLDecVar(op1, op2);
         outAListedeclarationvariableLdv(node);
     }
 
@@ -48,20 +48,20 @@ public class Sc2sa extends DepthFirstAdapter
     @Override
     public void caseAListedeclarationvariablebisLdvbis(AListedeclarationvariablebisLdvbis node)
     {
-        SaExp op1 = null;
-        SaExp op2 = null;
+        SaDecVar op1 = null;
+        SaLDecVar op2 = null;
         inAListedeclarationvariablebisLdvbis(node);
         if(node.getDv() != null)
         {
             node.getDv().apply(this);
-            op1 = (SaExp) this.returnValue;
+            op1 = (SaDecVar) this.returnValue;
         }
         if(node.getLdvbis() != null)
         {
             node.getLdvbis().apply(this);
-            op2 = (SaExp) this.returnValue;
+            op2 = (SaLDecVar) this.returnValue;
         }
-        this.returnValue = new SaExpAdd(op1, op2);
+        this.returnValue = new SaLDecVar(op1, op2);
         outAListedeclarationvariablebisLdvbis(node);
     }
 
@@ -69,15 +69,12 @@ public class Sc2sa extends DepthFirstAdapter
     @Override
     public void caseADeclarationvariableidDv(ADeclarationvariableidDv node)
     {
-        SaExp op1 = null;
-        SaExp op2 = null;
         inADeclarationvariableidDv(node);
         if(node.getTv() != null)
         {
             node.getTv().apply(this);
-            op1 = (SaExp) this.returnValue;
         }
-        this.returnValue = new SaExpAdd(op1, op2);
+        this.returnValue = new SaDecVarSimple(node.getIdentif().getText(), this.returnType);
         outADeclarationvariableidDv(node);
     }
 
@@ -85,15 +82,13 @@ public class Sc2sa extends DepthFirstAdapter
     @Override
     public void caseADeclarationvariableidtableauDv(ADeclarationvariableidtableauDv node)
     {
-        SaExp op1 = null;
-        SaExp op2 = null;
         inADeclarationvariableidtableauDv(node);
         if(node.getTv() != null)
         {
             node.getTv().apply(this);
-            op1 = (SaExp) this.returnValue;
         }
-        this.returnValue = new SaExpAdd(op1, op2);
+        int nombre = Integer.parseInt(node.getNombre().getText());
+        this.returnValue = new SaDecTab(node.getIdentif().getText(), this.returnType, nombre);
         outADeclarationvariableidtableauDv(node);
     }
 
@@ -176,6 +171,18 @@ public class Sc2sa extends DepthFirstAdapter
         }
         this.returnValue = new SaExpAdd(op1, op2);
         outAPlusE3(node);
+    }
+
+    @Override
+    public void caseATypeboolTv(ATypeboolTv node)
+    {
+        inATypeboolTv(node);
+        if(node.getBoolean() != null)
+        {
+            node.getBoolean().apply(this);
+        }
+        returnType = Type.BOOL;
+        outATypeboolTv(node);
     }
 
 
