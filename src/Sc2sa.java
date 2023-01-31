@@ -695,15 +695,121 @@ public class Sc2sa extends DepthFirstAdapter
     }
 
     //e6 = {eboucleexpr} parenthesegauche exp parenthesedroite
+    @Override
+    public void caseAEboucleexprE6(AEboucleexprE6 node)
+    {
+        SaExp op = null;
+        inAEboucleexprE6(node);
+        if(node.getExp() != null)
+        {
+            node.getExp().apply(this);
+            op = (SaExp) this.returnValue;
+        }
+        this.returnValue = op;
+        outAEboucleexprE6(node);
+    }
+
     //e6 = {evar} var
     //SaExpVar(SaVar var)
-    //e6 = {enombre} nombre
-    //e6 = {efonction} identif parenthesegauche lexp parenthesedroite
-    //e6 = {elire} lire parenthesegauche parenthesedroite
-    //e6 = {evrai} vrai
-    //e6 = {efaux} faux
-    //var = {varidentif} identif
-    //var = {varfonction} identif crochetgauche exp crochetdroit
+    @Override
+    public void caseAEvarE6(AEvarE6 node)
+    {
+        SaVar op = null;
+        inAEvarE6(node);
+        if(node.getVar() != null)
+        {
+            node.getVar().apply(this);
+            op = (SaVar) this.returnValue;
+        }
+        this.returnValue = new SaExpVar(op);
+        outAEvarE6(node);
+    }
 
+    //e6 = {enombre} nombre
+    @Override
+    public void caseAEnombreE6(AEnombreE6 node)
+    {
+        inAEnombreE6(node);
+        //todo: pas sur mais comm c'est terminal
+        outAEnombreE6(node);
+    }
+
+    //e6 = {efonction} identif parenthesegauche lexp parenthesedroite
+    @Override
+    public void caseAEfonctionE6(AEfonctionE6 node)
+    {
+        SaAppel op = null;
+        inAEfonctionE6(node);
+        if(node.getLexp() != null)
+        {
+            node.getLexp().apply(this);
+            op = (SaAppel) this.returnValue;
+        }
+        this.returnValue = new SaExpAppel(op);// todo pas sur
+        outAEfonctionE6(node);
+    }
+
+    //e6 = {elire} lire parenthesegauche parenthesedroite
+    @Override
+    public void caseAElireE6(AElireE6 node)
+    {
+        inAElireE6(node);
+        this.returnValue = new SaExpLire();
+        outAElireE6(node);
+    }
+
+    //e6 = {evrai} vrai
+    @Override
+    public void caseAEvraiE6(AEvraiE6 node)
+    {
+        inAEvraiE6(node);
+        this.returnValue = new SaExpVrai();
+        outAEvraiE6(node);
+    }
+
+    //e6 = {efaux} faux
+    @Override
+    public void caseAEfauxE6(AEfauxE6 node)
+    {
+        inAEfauxE6(node);
+        this.returnValue = new SaExpFaux();
+        outAEfauxE6(node);
+    }
+
+    //var = {varidentif} identif
+    @Override
+    public void caseAVaridentifVar(AVaridentifVar node)
+    {
+        SaDecVar op = null;
+        inAVaridentifVar(node);
+        if(node.getIdentif() != null)
+        {
+            node.getIdentif().apply(this);
+            op = (SaDecVar) this.returnValue;
+        }
+        this.returnValue = new SaVarSimple(op.getNom());
+        outAVaridentifVar(node);
+    }
+
+    //var = {varfonction} identif crochetgauche exp crochetdroit
+    @Override
+    public void caseAVarfonctionVar(AVarfonctionVar node)
+    {
+        SaDecVar op1 = null;
+        SaExp op2 = null;
+        inAVarfonctionVar(node);
+        if(node.getIdentif() != null)
+        {
+            node.getIdentif().apply(this);
+            op1 = (SaDecVar) this.returnValue;
+        }
+        if(node.getExp() != null)
+        {
+            node.getExp().apply(this);
+            op2 = (SaExp) this.returnValue;
+        }
+        this.returnValue = new SaVarIndicee(op1.getNom(), op2);
+        outAVarfonctionVar(node);
+    }
 
 }
