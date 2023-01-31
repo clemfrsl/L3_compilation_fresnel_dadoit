@@ -195,17 +195,20 @@ public class Sc2sa extends DepthFirstAdapter
         outADf(node);
     }
 
-    //to = {typeoptionel} tv
-    /*@Override
+    //to = {typeoptionel} tv//todo pas sur
+    @Override
     public void caseATypeoptionelTo(ATypeoptionelTo node)
     {
+        SaEnvironment op = null;
         inATypeoptionelTo(node);
         if(node.getTv() != null)
         {
             node.getTv().apply(this);
+            op = (SaEnvironment) this.returnValue;
         }
+        this.returnType = (TypeVal) op.getReturnValue();
         outATypeoptionelTo(node);
-    }*/
+    }
 
     //bi = accoladegauche li accoladedroite;
     @Override
@@ -362,7 +365,7 @@ public class Sc2sa extends DepthFirstAdapter
         outAFonctionecrireInst(node);
     }
 
-    //inst = {appelfonction} identif parenthesegauche lexp parenthesedroite pointvirgule
+    //inst = {appelfonction} identif parenthesegauche lexp parenthesedroite pointvirgule//todo
     //SaInstBloc(SaLInst val)
     //on demande un liste d'inst mais on a liste d'exp - fait mais pas sur donc
     /*@Override
