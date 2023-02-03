@@ -185,7 +185,7 @@ public class Sc2sa extends DepthFirstAdapter
         outATypeentierTv(node);
     }
 
-    //df = to identif parenthesegauche [premier]:ldv parenthesedroite [second]:ldv bi; //todo
+    //df = to identif parenthesegauche [premier]:ldv parenthesedroite [second]:ldv bi;
     @Override
     public void caseADf(ADf node)
     {
@@ -770,12 +770,12 @@ public class Sc2sa extends DepthFirstAdapter
         outAEvarE6(node);
     }
 
-    //e6 = {enombre} nombre
+    //e6 = {enombre} nombre //todo
     @Override
     public void caseAEnombreE6(AEnombreE6 node)
     {
         inAEnombreE6(node);
-        //todo: pas sur mais comme c'est terminal
+        //this.returnType = Type.ENTIER;
         outAEnombreE6(node);
     }
 
