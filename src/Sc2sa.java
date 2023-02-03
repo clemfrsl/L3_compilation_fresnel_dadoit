@@ -67,6 +67,15 @@ public class Sc2sa extends DepthFirstAdapter
         outAListedeclarationvariableLdv(node);
     }
 
+    //ldv epsilon
+    @Override
+    public void caseALdv(ALdv node)
+    {
+        inALdv(node);
+        this.returnValue = null;
+        outALdv(node);
+    }
+
     //ldvbis = {listedeclarationvariablebis} virgule dv ldvbis
     @Override
     public void caseAListedeclarationvariablebisLdvbis(AListedeclarationvariablebisLdvbis node)
@@ -86,6 +95,15 @@ public class Sc2sa extends DepthFirstAdapter
         }
         this.returnValue = new SaLDecVar(op1, op2);
         outAListedeclarationvariablebisLdvbis(node);
+    }
+
+    //ldvbis epsilon
+    @Override
+    public void caseALdvbis(ALdvbis node)
+    {
+        inALdvbis(node);
+        this.returnValue = null;
+        outALdvbis(node);
     }
 
     //dv = {declarationvariableid} tv identif
@@ -136,15 +154,20 @@ public class Sc2sa extends DepthFirstAdapter
         outAListedeclarationfonctionLdf(node);
     }
 
+    //ldf epsilon
+    @Override
+    public void caseALdf(ALdf node)
+    {
+        inALdf(node);
+        this.returnValue = null;
+        outALdf(node);
+    }
+
     //tv = {typebool} boolean
     @Override
     public void caseATypeboolTv(ATypeboolTv node)
     {
         inATypeboolTv(node);
-        if(node.getBoolean() != null)
-        {
-            node.getBoolean().apply(this);
-        }
         this.returnType = Type.BOOL;
         outATypeboolTv(node);
     }
@@ -162,7 +185,7 @@ public class Sc2sa extends DepthFirstAdapter
         outATypeentierTv(node);
     }
 
-    //df = to identif parenthesegauche [premier]:ldv parenthesedroite [second]:ldv bi;
+    //df = to identif parenthesegauche [premier]:ldv parenthesedroite [second]:ldv bi; //todo
     @Override
     public void caseADf(ADf node)
     {
@@ -195,19 +218,14 @@ public class Sc2sa extends DepthFirstAdapter
         outADf(node);
     }
 
-    //to = {typeoptionel} tv//todo pas sur
+    //to = {typeoptionel} : override pas nécessaire
+    //to epsilon
     @Override
-    public void caseATypeoptionelTo(ATypeoptionelTo node)
+    public void caseATo(ATo node)
     {
-        SaEnvironment op = null;
-        inATypeoptionelTo(node);
-        if(node.getTv() != null)
-        {
-            node.getTv().apply(this);
-            op = (SaEnvironment) this.returnValue;
-        }
-        this.returnType = (TypeVal) op.getReturnValue();
-        outATypeoptionelTo(node);
+        inATo(node);
+        this.returnType = Type.NUL;
+        outATo(node);
     }
 
     //bi = accoladegauche li accoladedroite;
@@ -244,6 +262,15 @@ public class Sc2sa extends DepthFirstAdapter
         }
         this.returnValue = new SaLInst(op1, op2);
         outAListeinstructionLi(node);
+    }
+
+    //li epsilon
+    @Override
+    public void caseALi(ALi node)
+    {
+        inALi(node);
+        returnValue = null;
+        outALi(node);
     }
 
     //inst = {assignation} var egal exp pointvirgule
@@ -365,10 +392,8 @@ public class Sc2sa extends DepthFirstAdapter
         outAFonctionecrireInst(node);
     }
 
-    //inst = {appelfonction} identif parenthesegauche lexp parenthesedroite pointvirgule//todo
-    //SaInstBloc(SaLInst val)
-    //on demande un liste d'inst mais on a liste d'exp - fait mais pas sur donc
-    /*@Override
+    //inst = {appelfonction} identif parenthesegauche lexp parenthesedroite pointvirgule //todo
+    @Override
     public void caseAAppelfonctionInst(AAppelfonctionInst node)
     {
         SaLInst val = null;
@@ -380,7 +405,7 @@ public class Sc2sa extends DepthFirstAdapter
         }
         this.returnValue = new SaInstBloc(val);
         outAAppelfonctionInst(node);
-    }*/
+    }
 
     //lexp = {listeexpr} exp lexpbis
     @Override
@@ -403,6 +428,15 @@ public class Sc2sa extends DepthFirstAdapter
         outAListeexprLexp(node);
     }
 
+    //lexp epsilon
+    @Override
+    public void caseALexp(ALexp node)
+    {
+        inALexp(node);
+        this.returnValue = null;
+        outALexp(node);
+    }
+
     //lexpbis = {listeexprbis} virgule exp lexpbis
     @Override
     public void caseAListeexprbisLexpbis(AListeexprbisLexpbis node)
@@ -422,6 +456,15 @@ public class Sc2sa extends DepthFirstAdapter
         }
         this.returnValue = new SaLExp(op1, op2);
         outAListeexprbisLexpbis(node);
+    }
+
+    //lexpbis epsilon
+    @Override
+    public void caseALexpbis(ALexpbis node)
+    {
+        inALexpbis(node);
+        this.returnValue = null;
+        outALexpbis(node);
     }
 
     //exp = {ou} exp ou e1
@@ -713,7 +756,6 @@ public class Sc2sa extends DepthFirstAdapter
     }
 
     //e6 = {evar} var
-    //SaExpVar(SaVar var)
     @Override
     public void caseAEvarE6(AEvarE6 node)
     {
@@ -733,7 +775,7 @@ public class Sc2sa extends DepthFirstAdapter
     public void caseAEnombreE6(AEnombreE6 node)
     {
         inAEnombreE6(node);
-        //todo: pas sur mais comm c'est terminal
+        //todo: pas sur mais comme c'est terminal
         outAEnombreE6(node);
     }
 
