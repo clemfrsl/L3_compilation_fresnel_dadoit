@@ -392,18 +392,18 @@ public class Sc2sa extends DepthFirstAdapter
         outAFonctionecrireInst(node);
     }
 
-    //inst = {appelfonction} identif parenthesegauche lexp parenthesedroite pointvirgule //todo
+    //inst = {appelfonction} identif parenthesegauche lexp parenthesedroite pointvirgule
     @Override
     public void caseAAppelfonctionInst(AAppelfonctionInst node)
     {
-        SaLInst val = null;
+        SaLExp arguments = null;
         inAAppelfonctionInst(node);
         if(node.getLexp() != null)
         {
             node.getLexp().apply(this);
-            val = (SaLInst) this.returnValue;
+            arguments = (SaLExp) this.returnValue;
         }
-        this.returnValue = new SaInstBloc(val);
+        this.returnValue = new SaAppel(node.getIdentif().getText(), arguments);
         outAAppelfonctionInst(node);
     }
 
@@ -770,12 +770,12 @@ public class Sc2sa extends DepthFirstAdapter
         outAEvarE6(node);
     }
 
-    //e6 = {enombre} nombre //todo
+    //e6 = {enombre} nombre
     @Override
     public void caseAEnombreE6(AEnombreE6 node)
     {
         inAEnombreE6(node);
-        //this.returnType = Type.ENTIER;
+        this.returnValue = new SaExpInt(Integer.parseInt(node.getNombre().getText()));
         outAEnombreE6(node);
     }
 
@@ -783,14 +783,14 @@ public class Sc2sa extends DepthFirstAdapter
     @Override
     public void caseAEfonctionE6(AEfonctionE6 node)
     {
-        SaAppel op = null;
+        SaLExp arg = null;
         inAEfonctionE6(node);
         if(node.getLexp() != null)
         {
             node.getLexp().apply(this);
-            op = (SaAppel) this.returnValue;
+            arg = (SaLExp) this.returnValue;
         }
-        this.returnValue = new SaExpAppel(op);// todo pas sur
+        this.returnValue = new SaExpAppel(new SaAppel(node.getIdentif().getText(), arg));
         outAEfonctionE6(node);
     }
 
