@@ -1,10 +1,30 @@
 Évaluation de Diff de sa :
-20/80 correct ( 25.00%)
+55/80 correct ( 68.75%)
+	add1.sa       CORRECT
+	add2.sa       CORRECT
 	and1.sa       CORRECT
 	and2.sa       CORRECT
 	and3.sa       CORRECT
 	and4.sa       CORRECT
 	and5.sa       CORRECT
+	appel1.sa     CORRECT
+	appel2.sa     CORRECT
+	appel3.sa     CORRECT
+	div1.sa       CORRECT
+	div2.sa       CORRECT
+	div3.sa       CORRECT
+	div4.sa       CORRECT
+	ecrire1.sa    CORRECT
+	ecrire2.sa    CORRECT
+	egal1.sa      CORRECT
+	egal2.sa      CORRECT
+	egal3.sa      CORRECT
+	inf1.sa       CORRECT
+	inf2.sa       CORRECT
+	inf3.sa       CORRECT
+	mult1.sa      CORRECT
+	mult2.sa      CORRECT
+	mult3.sa      CORRECT
 	not1.sa       CORRECT
 	not2.sa       CORRECT
 	not3.sa       CORRECT
@@ -13,47 +33,28 @@
 	or3.sa        CORRECT
 	or4.sa        CORRECT
 	or5.sa        CORRECT
+	parenth1.sa   CORRECT
+	parenth2.sa   CORRECT
+	prio34-1.sa   CORRECT
+	prio34-2.sa   CORRECT
+	prio34-3.sa   CORRECT
+	prio34-4.sa   CORRECT
+	prio45-1.sa   CORRECT
+	prio45-2.sa   CORRECT
+	prio45-3.sa   CORRECT
+	prio45-4.sa   CORRECT
+	prio56-1.sa   CORRECT
 	prio56-2.sa   CORRECT
 	prio67-1.sa   CORRECT
 	prio67-2.sa   CORRECT
 	si1.sa        CORRECT
+	si2.sa        CORRECT
 	si3.sa        CORRECT
 	si4.sa        CORRECT
 	si5.sa        CORRECT
-	add1.sa       INCORRECT
-	add2.sa       INCORRECT
-	appel1.sa     INCORRECT
-	appel2.sa     INCORRECT
-	appel3.sa     INCORRECT
-	div1.sa       INCORRECT
-	div2.sa       INCORRECT
-	div3.sa       INCORRECT
-	div4.sa       INCORRECT
-	ecrire1.sa    INCORRECT
-	ecrire2.sa    INCORRECT
-	egal1.sa      INCORRECT
-	egal2.sa      INCORRECT
-	egal3.sa      INCORRECT
-	inf1.sa       INCORRECT
-	inf2.sa       INCORRECT
-	inf3.sa       INCORRECT
-	mult1.sa      INCORRECT
-	mult2.sa      INCORRECT
-	mult3.sa      INCORRECT
-	parenth1.sa   INCORRECT
-	parenth2.sa   INCORRECT
-	prio34-1.sa   INCORRECT
-	prio34-2.sa   INCORRECT
-	prio34-3.sa   INCORRECT
-	prio34-4.sa   INCORRECT
-	prio45-1.sa   INCORRECT
-	prio45-2.sa   INCORRECT
-	prio45-3.sa   INCORRECT
-	prio45-4.sa   INCORRECT
-	prio56-1.sa   INCORRECT
-	sub1.sa       INCORRECT
-	sub2.sa       INCORRECT
-	sub3.sa       INCORRECT
+	sub1.sa       CORRECT
+	sub2.sa       CORRECT
+	sub3.sa       CORRECT
 	affect1.sa         NON-EXISTANT
 	affect2.sa         NON-EXISTANT
 	affect3.sa         NON-EXISTANT
@@ -63,7 +64,6 @@
 	appel-retour1.sa   NON-EXISTANT
 	fibo.sa            NON-EXISTANT
 	rec1.sa            NON-EXISTANT
-	si2.sa             NON-EXISTANT
 	tab1.sa            NON-EXISTANT
 	tab2.sa            NON-EXISTANT
 	tab3.sa            NON-EXISTANT
@@ -132,6 +132,7 @@
 	prio67-1.saout   INCORRECT
 	prio67-2.saout   INCORRECT
 	si1.saout        INCORRECT
+	si2.saout        INCORRECT
 	si3.saout        INCORRECT
 	si4.saout        INCORRECT
 	si5.saout        INCORRECT
@@ -147,7 +148,6 @@
 	appel-retour1.saout   NON-EXISTANT
 	fibo.saout            NON-EXISTANT
 	rec1.saout            NON-EXISTANT
-	si2.saout             NON-EXISTANT
 	tab1.saout            NON-EXISTANT
 	tab2.saout            NON-EXISTANT
 	tab3.saout            NON-EXISTANT
@@ -425,6 +425,10 @@ Caused by: java.lang.ClassNotFoundException: SaVM
 '
 
 ERROR evaluateSa for input si1.l : 'Error: Could not find or load main class SaVM
+Caused by: java.lang.ClassNotFoundException: SaVM
+'
+
+ERROR evaluateSa for input si2.l : 'Error: Could not find or load main class SaVM
 Caused by: java.lang.ClassNotFoundException: SaVM
 '
 
