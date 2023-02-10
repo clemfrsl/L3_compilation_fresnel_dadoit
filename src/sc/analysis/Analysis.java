@@ -100,4 +100,8 @@ public interface Analysis extends Switch
     void caseTIdentif(TIdentif node);
     void caseEOF(EOF node);
     void caseInvalidToken(InvalidToken node);
+
+    void caseATypefauxTv(ATypefauxTv node);
+    void caseATypevraiTv(ATypevraiTv node);
+
 }

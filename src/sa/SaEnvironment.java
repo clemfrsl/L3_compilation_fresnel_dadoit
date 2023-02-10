@@ -10,21 +10,21 @@ public class SaEnvironment {
 
     public SaEnvironment (TsItemFct fct)
     {
-	SaLExp lArgs = null;
-	Ts localTable = fct.getTable();
-	int i = 0;
+        SaLExp lArgs = null;
+        Ts localTable = fct.getTable();
+        int i = 0;
 
-	args = new Memory(localTable.getAdrArgCourante(), 0);
-	vars = new Memory(localTable.getAdrVarCourante(), 0);
+        args = new Memory(localTable.getAdrArgCourante(), 0);
+        vars = new Memory(localTable.getAdrVarCourante(), 0);
 
-	//	args = new Memory(200, 0);
-	//	vars = new Memory(200, 0);
+        //	args = new Memory(200, 0);
+        //	vars = new Memory(200, 0);
 
-	returnValue = null;
-	//	System.out.println("allocation d'un nouvel environnement, fonction " + fct.getIdentif());
-	//	System.out.println("dim var = " + localTable.getAdrVarCourante());
-	//	System.out.println("dim arg = " + localTable.getAdrArgCourante());
-	
+        returnValue = null;
+        //	System.out.println("allocation d'un nouvel environnement, fonction " + fct.getIdentif());
+        //	System.out.println("dim var = " + localTable.getAdrVarCourante());
+        //	System.out.println("dim arg = " + localTable.getAdrArgCourante());
+
     }
 
 

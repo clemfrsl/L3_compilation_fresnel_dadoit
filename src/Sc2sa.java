@@ -807,14 +807,13 @@ public class Sc2sa extends DepthFirstAdapter
     @Override
     public void caseAVaridentifVar(AVaridentifVar node)
     {
-        SaDecVar op = null;
+        String id = null;
         inAVaridentifVar(node);
         if(node.getIdentif() != null)
         {
-            node.getIdentif().apply(this);
-            op = (SaDecVar) this.returnValue;
+            id = node.getIdentif().getText();
         }
-        this.returnValue = new SaVarSimple(op.getNom());
+        this.returnValue = new SaVarSimple(id);
         outAVaridentifVar(node);
     }
 
@@ -822,20 +821,19 @@ public class Sc2sa extends DepthFirstAdapter
     @Override
     public void caseAVarfonctionVar(AVarfonctionVar node)
     {
-        SaDecVar op1 = null;
-        SaExp op2 = null;
+        String id = null;
+        SaExp op = null;
         inAVarfonctionVar(node);
         if(node.getIdentif() != null)
         {
-            node.getIdentif().apply(this);
-            op1 = (SaDecVar) this.returnValue;
+            id = node.getIdentif().getText();
         }
         if(node.getExp() != null)
         {
             node.getExp().apply(this);
-            op2 = (SaExp) this.returnValue;
+            op = (SaExp) this.returnValue;
         }
-        this.returnValue = new SaVarIndicee(op1.getNom(), op2);
+        this.returnValue = new SaVarIndicee(id, op);
         outAVarfonctionVar(node);
     }
 
