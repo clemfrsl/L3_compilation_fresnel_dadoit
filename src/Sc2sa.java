@@ -185,6 +185,10 @@ public class Sc2sa extends DepthFirstAdapter
     public void caseATypeboolTv(ATypeboolTv node)
     {
         inATypeboolTv(node);
+        if(node.getBoolean() != null)
+        {
+            node.getBoolean().apply(this);
+        }
         this.returnType = Type.BOOL;
         outATypeboolTv(node);
     }
@@ -194,6 +198,10 @@ public class Sc2sa extends DepthFirstAdapter
     public void caseATypeentierTv(ATypeentierTv node)
     {
         inATypeentierTv(node);
+        if(node.getEntier() != null)
+        {
+            node.getEntier().apply(this);
+        }
         this.returnType = Type.ENTIER;
         outATypeentierTv(node);
     }
@@ -227,7 +235,7 @@ public class Sc2sa extends DepthFirstAdapter
         if(node.getBi() != null)
         {
             node.getBi().apply(this);
-            corps = (SaInstBloc) this.returnValue; //inst pour un bloc d'instruction //todo
+            corps = (SaInstBloc) this.returnValue;
         }
         this.returnValue = new SaDecFonc(node.getIdentif().getText(), this.returnType, parametres, variables, corps);
         outADf(node);
@@ -313,7 +321,7 @@ public class Sc2sa extends DepthFirstAdapter
     public void caseABoucletantqueInst(ABoucletantqueInst node)
     {
         SaExp test = null;
-        SaInst faire = null;
+        SaInstBloc faire = null;
         inABoucletantqueInst(node);
         if(node.getExp() != null)
         {
@@ -323,7 +331,7 @@ public class Sc2sa extends DepthFirstAdapter
         if(node.getBi() != null)
         {
             node.getBi().apply(this);
-            faire = (SaInst) this.returnValue; //inst pour un bloc d'instruction //todo
+            faire = (SaInstBloc) this.returnValue;
         }
         this.returnValue = new SaInstTantQue(test, faire);
         outABoucletantqueInst(node);
@@ -344,7 +352,7 @@ public class Sc2sa extends DepthFirstAdapter
         if(node.getBi() != null)
         {
             node.getBi().apply(this);
-            alors = (SaInstBloc) this.returnValue; //inst pour un bloc d'instruction //todo
+            alors = (SaInstBloc) this.returnValue;
         }
         this.returnValue = new SaInstSi(test, alors, null);
         outASialorsInst(node);
@@ -366,12 +374,12 @@ public class Sc2sa extends DepthFirstAdapter
         if(node.getPremier() != null)
         {
             node.getPremier().apply(this);
-            alors = (SaInstBloc) this.returnValue; //inst pour un bloc d'instruction //todo
+            alors = (SaInstBloc) this.returnValue;
         }
         if(node.getSecond() != null)
         {
             node.getSecond().apply(this);
-            sinon = (SaInstBloc) this.returnValue; //inst pour un bloc d'instruction //todo
+            sinon = (SaInstBloc) this.returnValue;
         }
         this.returnValue = new SaInstSi(test, alors, sinon);
         outASialorssinonInst(node);
@@ -413,6 +421,10 @@ public class Sc2sa extends DepthFirstAdapter
     {
         SaLExp arguments = null;
         inAAppelfonctionInst(node);
+        if(node.getIdentif() != null)
+        {
+            node.getIdentif().apply(this);
+        }
         if(node.getLexp() != null)
         {
             node.getLexp().apply(this);
@@ -805,6 +817,10 @@ public class Sc2sa extends DepthFirstAdapter
     public void caseAEvraiE6(AEvraiE6 node)
     {
         inAEvraiE6(node);
+        if(node.getVrai() != null)
+        {
+            node.getVrai().apply(this);
+        }
         this.returnValue = new SaExpVrai();
         outAEvraiE6(node);
     }
@@ -814,6 +830,10 @@ public class Sc2sa extends DepthFirstAdapter
     public void caseAEfauxE6(AEfauxE6 node)
     {
         inAEfauxE6(node);
+        if(node.getFaux() != null)
+        {
+            node.getFaux().apply(this);
+        }
         this.returnValue = new SaExpFaux();
         outAEfauxE6(node);
     }
