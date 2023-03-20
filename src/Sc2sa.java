@@ -241,7 +241,8 @@ public class Sc2sa extends DepthFirstAdapter
         outADf(node);
     }
 
-    //to = {typeoptionel} : override pas nécessaire
+    //to = {typeoptionel} : override pas nécessairel
+
     //to epsilon
     @Override
     public void caseATo(ATo node)
