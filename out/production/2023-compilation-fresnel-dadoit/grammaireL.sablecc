@@ -1,0 +1,105 @@
+Package sc;
+
+Helpers
+
+lettre = [['a' .. 'z'] + ['A' .. 'Z']];
+chiffre = ['0' .. '9'];
+alpha = [lettre + ['_' + '$']];
+alphanum = [lettre + chiffre];
+
+Tokens
+
+espaces = (' ' | 13 | 10)+;
+commentaire = '#' [[0 .. 0xffff] - [10 + 13]]* (10 | 13 | 10 13);
+virgule = ',';
+pointvirgule = ';';
+boolean = 'boolean';
+entier = 'entier';
+nombre = chiffre+;
+parenthesegauche = '(';
+parenthesedroite = ')';
+crochetgauche = '[';
+crochetdroit = ']';
+accoladegauche = '{';
+accoladedroite = '}';
+egal = '=';
+plus = '+';
+moins = '-';
+mul = '*';
+div = '/';
+inf = '<';
+ou = '|';
+et = '&';
+non = '!';
+lire = 'lire';
+ecrire = 'ecrire';
+retour = 'retour';
+vrai = 'vrai';
+faux = 'faux';
+tantque = 'tantque';
+faire = 'faire';
+si = 'si';
+alors = 'alors';
+sinon = 'sinon';
+identif = alpha alphanum*;
+
+Ignored Tokens
+
+espaces, commentaire;
+
+Productions
+
+// l'axiome
+
+programme = ldv ldf ;
+ldv = {listedeclarationvariable} dv ldvbis
+    |;
+ldvbis = {listedeclarationvariablebis} virgule dv ldvbis
+    |;
+dv = {declarationvariableid} tv identif
+    | {declarationvariableidtableau} tv identif crochetgauche nombre crochetdroit;
+ldf = {listedeclarationfonction} df ldf
+    |;
+tv = {typebool} boolean
+    | {typeentier} entier;
+df = to identif parenthesegauche [premier]:ldv parenthesedroite [second]:ldv bi;
+to = {typeoptionel} tv
+    |;
+bi = accoladegauche li accoladedroite;
+li = {listeinstruction} inst li
+    |;
+inst = {assignation} var egal exp pointvirgule
+    | {boucletantque} tantque exp faire bi
+    | {sialors} si exp alors bi
+    | {sialorssinon} si exp alors [premier]:bi sinon [second]:bi
+    | {retour} retour exp pointvirgule
+    | {fonctionecrire} ecrire parenthesegauche exp parenthesedroite pointvirgule
+    | {appelfonction} identif parenthesegauche lexp parenthesedroite pointvirgule;
+lexp = {listeexpr} exp lexpbis
+    |;
+lexpbis = {listeexprbis} virgule exp lexpbis
+    |;
+exp = {ou} exp ou e1
+    | {pasou} e1;
+e1 = {et} e1 et e2
+    | {paset} e2;
+e2 = {egal} e2 egal e3
+    | {inf} e2 inf e3
+    | {pasegalinf} e3;
+e3 = {plus} e3 plus e4
+    | {moins} e3 moins e4
+    | {pasplusmoins} e4;
+e4 = {mul} e4 mul e5
+    | {div} e4 div e5
+    | {pasmuldiv} e5;
+e5 = {negation} non e5
+    | {pasnegation} e6;
+e6 = {eboucleexpr} parenthesegauche exp parenthesedroite
+    | {evar} var
+    | {enombre} nombre
+    | {efonction} identif parenthesegauche lexp parenthesedroite
+    | {elire} lire parenthesegauche parenthesedroite
+    | {evrai} vrai
+    | {efaux} faux;
+var = {varidentif} identif
+    | {varfonction} identif crochetgauche exp crochetdroit;
