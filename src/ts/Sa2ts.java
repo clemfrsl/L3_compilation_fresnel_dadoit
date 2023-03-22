@@ -60,7 +60,7 @@ public class Sa2ts extends SaDepthFirstVisitor <Void> {
 		defaultIn(node);
 		TsItemVar item =null;
 		if(context == Context.GLOBAL){
-			item = tableGlobale.getVar(node.getNom())
+			item = tableGlobale.getVar(node.getNom());
 			if( item != null){
 				throw new ErrorException(Error.TS, "Variable globale deja utilisée");
 			}

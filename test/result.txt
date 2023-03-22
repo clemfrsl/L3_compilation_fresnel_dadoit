@@ -1,5 +1,5 @@
 Évaluation de Diff de sa :
-63/80 correct ( 78.75%)
+64/79 correct ( 81.01%)
 	add1.sa            CORRECT
 	add2.sa            CORRECT
 	affect1.sa         CORRECT
@@ -49,6 +49,7 @@
 	prio56-2.sa        CORRECT
 	prio67-1.sa        CORRECT
 	prio67-2.sa        CORRECT
+	rec1.sa            CORRECT
 	si1.sa             CORRECT
 	si2.sa             CORRECT
 	si3.sa             CORRECT
@@ -68,8 +69,6 @@
 	appel-param1.sa   INCORRECT
 	appel-param2.sa   INCORRECT
 	appel-param3.sa   INCORRECT
-	fibo.sa           INCORRECT
-	rec1.sa           INCORRECT
 	tab2.sa           INCORRECT
 	tab3.sa           INCORRECT
 	tantque1.sa       INCORRECT
@@ -81,9 +80,9 @@
 	varloc4.sa        INCORRECT
 	varloc5.sa        INCORRECT
 Évaluation de Diff de ts :
-0/80 correct (  0.00%)
+0/79 correct (  0.00%)
 Évaluation de Execution de sa :
-0/80 correct (  0.00%)
+0/79 correct (  0.00%)
 	add1.saout            INCORRECT
 	add2.saout            INCORRECT
 	affect1.saout         INCORRECT
@@ -110,7 +109,6 @@
 	egal1.saout           INCORRECT
 	egal2.saout           INCORRECT
 	egal3.saout           INCORRECT
-	fibo.saout            INCORRECT
 	inf1.saout            INCORRECT
 	inf2.saout            INCORRECT
 	inf3.saout            INCORRECT
@@ -165,19 +163,19 @@
 	varloc4.saout         INCORRECT
 	varloc5.saout         INCORRECT
 Évaluation de Diff de c3a :
-0/80 correct (  0.00%)
+0/79 correct (  0.00%)
 Évaluation de Execution du c3a :
-0/80 correct (  0.00%)
+0/79 correct (  0.00%)
 Évaluation de Diff de pre-nasm :
-0/80 correct (  0.00%)
+0/79 correct (  0.00%)
 Évaluation de Execution du pre-nasm :
-0/80 correct (  0.00%)
+0/79 correct (  0.00%)
 Évaluation de Diff de nasm :
-0/80 correct (  0.00%)
+0/79 correct (  0.00%)
 Évaluation de Execution du nasm :
-0/80 correct (  0.00%)
+0/79 correct (  0.00%)
 Évaluation de Execution du binaire :
-0/80 correct (  0.00%)
+0/79 correct (  0.00%)
 Évaluation de ERR_TS :
 0/7 correct (  0.00%)
 	double_dec1.l       INCORRECT
@@ -336,10 +334,6 @@ Caused by: java.lang.ClassNotFoundException: SaVM
 '
 
 ERROR evaluateSa for input egal3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input fibo.l : 'Error: Could not find or load main class SaVM
 Caused by: java.lang.ClassNotFoundException: SaVM
 '
 
