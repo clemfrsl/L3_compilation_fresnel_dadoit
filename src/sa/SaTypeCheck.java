@@ -19,6 +19,19 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
 	catch(Exception e){}
     }
 
+    // P -> LDEC LDEC
+    public void visit(SaProg node) throws Exception
+    {
+        defaultIn(node);
+        if(node.getVariables() != null)
+            node.getVariables().accept(this);
+        if(node.getFonctions() != null)
+            node.getFonctions().accept(this);
+        defaultOut(node);
+        return null;
+    }
+
+
     public void defaultIn(SaNode node)
     {
 	//			System.out.println("<" + node.getClass().getSimpleName() + ">");
