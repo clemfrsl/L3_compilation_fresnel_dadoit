@@ -210,6 +210,7 @@ public class Sc2sa extends DepthFirstAdapter
     @Override
     public void caseADf(ADf node)
     {
+        Type type = null;
         SaLDecVar parametres = null;
         SaLDecVar variables = null;
         SaInstBloc corps = null;
@@ -217,6 +218,7 @@ public class Sc2sa extends DepthFirstAdapter
         if(node.getTo() != null)
         {
             node.getTo().apply(this);
+            type = this.returnType;
         }
         if(node.getIdentif() != null)
         {
@@ -237,11 +239,31 @@ public class Sc2sa extends DepthFirstAdapter
             node.getBi().apply(this);
             corps = (SaInstBloc) this.returnValue;
         }
-        this.returnValue = new SaDecFonc(node.getIdentif().getText(), this.returnType, parametres, variables, corps);
+        this.returnValue = new SaDecFonc(node.getIdentif().getText(), type, parametres, variables, corps);
         outADf(node);
     }
 
     //to = {typeoptionel} : override pas nécessairel
+    public void inATypeoptionelTo(ATypeoptionelTo node)
+    {
+        defaultIn(node);
+    }
+
+    public void outATypeoptionelTo(ATypeoptionelTo node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseATypeoptionelTo(ATypeoptionelTo node)
+    {
+        inATypeoptionelTo(node);
+        if(node.getTv() != null)
+        {
+            node.getTv().apply(this);
+        }
+        outATypeoptionelTo(node);
+    }
 
     //to epsilon
     @Override
