@@ -161,17 +161,76 @@
 	varloc5.ts         CORRECT
 	appel2.ts   INCORRECT
 Évaluation de Execution de sa :
-0/79 correct (  0.00%)
-	add1.saout            INCORRECT
-	add2.saout            INCORRECT
-	affect1.saout         INCORRECT
-	affect2.saout         INCORRECT
+68/79 correct ( 86.08%)
+	add1.saout       CORRECT
+	add2.saout       CORRECT
+	affect1.saout    CORRECT
+	affect2.saout    CORRECT
+	and1.saout       CORRECT
+	and2.saout       CORRECT
+	and3.saout       CORRECT
+	and4.saout       CORRECT
+	and5.saout       CORRECT
+	div1.saout       CORRECT
+	div2.saout       CORRECT
+	div3.saout       CORRECT
+	div4.saout       CORRECT
+	ecrire1.saout    CORRECT
+	ecrire2.saout    CORRECT
+	egal1.saout      CORRECT
+	egal2.saout      CORRECT
+	egal3.saout      CORRECT
+	inf1.saout       CORRECT
+	inf2.saout       CORRECT
+	inf3.saout       CORRECT
+	mult1.saout      CORRECT
+	mult2.saout      CORRECT
+	mult3.saout      CORRECT
+	not1.saout       CORRECT
+	not2.saout       CORRECT
+	not3.saout       CORRECT
+	or1.saout        CORRECT
+	or2.saout        CORRECT
+	or3.saout        CORRECT
+	or4.saout        CORRECT
+	or5.saout        CORRECT
+	parenth1.saout   CORRECT
+	parenth2.saout   CORRECT
+	prio34-1.saout   CORRECT
+	prio34-2.saout   CORRECT
+	prio34-3.saout   CORRECT
+	prio34-4.saout   CORRECT
+	prio45-1.saout   CORRECT
+	prio45-2.saout   CORRECT
+	prio45-3.saout   CORRECT
+	prio45-4.saout   CORRECT
+	prio56-1.saout   CORRECT
+	prio56-2.saout   CORRECT
+	prio67-1.saout   CORRECT
+	prio67-2.saout   CORRECT
+	si1.saout        CORRECT
+	si2.saout        CORRECT
+	si3.saout        CORRECT
+	si4.saout        CORRECT
+	si5.saout        CORRECT
+	sub1.saout       CORRECT
+	sub2.saout       CORRECT
+	sub3.saout       CORRECT
+	tab1.saout       CORRECT
+	tab2.saout       CORRECT
+	tab3.saout       CORRECT
+	tab4.saout       CORRECT
+	tantque1.saout   CORRECT
+	tantque2.saout   CORRECT
+	varglob1.saout   CORRECT
+	varglob2.saout   CORRECT
+	varglob3.saout   CORRECT
+	varglob4.saout   CORRECT
+	varloc1.saout    CORRECT
+	varloc2.saout    CORRECT
+	varloc3.saout    CORRECT
+	varloc4.saout    CORRECT
 	affect3.saout         INCORRECT
-	and1.saout            INCORRECT
-	and2.saout            INCORRECT
-	and3.saout            INCORRECT
-	and4.saout            INCORRECT
-	and5.saout            INCORRECT
 	appel-param1.saout    INCORRECT
 	appel-param2.saout    INCORRECT
 	appel-param3.saout    INCORRECT
@@ -179,67 +238,8 @@
 	appel1.saout          INCORRECT
 	appel2.saout          INCORRECT
 	appel3.saout          INCORRECT
-	div1.saout            INCORRECT
-	div2.saout            INCORRECT
-	div3.saout            INCORRECT
-	div4.saout            INCORRECT
-	ecrire1.saout         INCORRECT
-	ecrire2.saout         INCORRECT
-	egal1.saout           INCORRECT
-	egal2.saout           INCORRECT
-	egal3.saout           INCORRECT
-	inf1.saout            INCORRECT
-	inf2.saout            INCORRECT
-	inf3.saout            INCORRECT
-	mult1.saout           INCORRECT
-	mult2.saout           INCORRECT
-	mult3.saout           INCORRECT
-	not1.saout            INCORRECT
-	not2.saout            INCORRECT
-	not3.saout            INCORRECT
-	or1.saout             INCORRECT
-	or2.saout             INCORRECT
-	or3.saout             INCORRECT
-	or4.saout             INCORRECT
-	or5.saout             INCORRECT
-	parenth1.saout        INCORRECT
-	parenth2.saout        INCORRECT
-	prio34-1.saout        INCORRECT
-	prio34-2.saout        INCORRECT
-	prio34-3.saout        INCORRECT
-	prio34-4.saout        INCORRECT
-	prio45-1.saout        INCORRECT
-	prio45-2.saout        INCORRECT
-	prio45-3.saout        INCORRECT
-	prio45-4.saout        INCORRECT
-	prio56-1.saout        INCORRECT
-	prio56-2.saout        INCORRECT
-	prio67-1.saout        INCORRECT
-	prio67-2.saout        INCORRECT
 	rec1.saout            INCORRECT
-	si1.saout             INCORRECT
-	si2.saout             INCORRECT
-	si3.saout             INCORRECT
-	si4.saout             INCORRECT
-	si5.saout             INCORRECT
-	sub1.saout            INCORRECT
-	sub2.saout            INCORRECT
-	sub3.saout            INCORRECT
-	tab1.saout            INCORRECT
-	tab2.saout            INCORRECT
-	tab3.saout            INCORRECT
-	tab4.saout            INCORRECT
-	tantque1.saout        INCORRECT
-	tantque2.saout        INCORRECT
 	tri.saout             INCORRECT
-	varglob1.saout        INCORRECT
-	varglob2.saout        INCORRECT
-	varglob3.saout        INCORRECT
-	varglob4.saout        INCORRECT
-	varloc1.saout         INCORRECT
-	varloc2.saout         INCORRECT
-	varloc3.saout         INCORRECT
-	varloc4.saout         INCORRECT
 	varloc5.saout         INCORRECT
 Évaluation de Diff de c3a :
 0/79 correct (  0.00%)
@@ -311,319 +311,4 @@
 	sub3.l       INCORRECT
 	sub4.l       INCORRECT
 	tantque1.l   INCORRECT
-------------------------------EVALUATION ERRORS------------------------------
-ERROR evaluateSa for input add1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
 
-ERROR evaluateSa for input add2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input affect1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input affect2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input affect3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input and1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input and2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input and3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input and4.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input and5.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input appel-param1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input appel-param2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input appel-param3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input appel-retour1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input appel1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input appel2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input appel3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input div1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input div2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input div3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input div4.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input ecrire1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input ecrire2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input egal1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input egal2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input egal3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input inf1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input inf2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input inf3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input mult1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input mult2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input mult3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input not1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input not2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input not3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input or1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input or2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input or3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input or4.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input or5.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input parenth1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input parenth2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input prio34-1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input prio34-2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input prio34-3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input prio34-4.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input prio45-1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input prio45-2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input prio45-3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input prio45-4.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input prio56-1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input prio56-2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input prio67-1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input prio67-2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input rec1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input si1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input si2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input si3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input si4.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input si5.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input sub1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input sub2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input sub3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input tab1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input tab2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input tab3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input tab4.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input tantque1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input tantque2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input tri.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input varglob1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input varglob2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input varglob3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input varglob4.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input varloc1.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input varloc2.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input varloc3.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input varloc4.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
-
-ERROR evaluateSa for input varloc5.l : 'Error: Could not find or load main class SaVM
-Caused by: java.lang.ClassNotFoundException: SaVM
-'
