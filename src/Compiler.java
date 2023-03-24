@@ -3,6 +3,8 @@ import sc.parser.*;
 import sc.lexer.*;
 import sc.node.*;
 import sa.*;
+import ts.Sa2ts;
+import ts.Ts;
 //import ts.*;
 //import c3a.*;
 //import nasm.*;
@@ -61,16 +63,16 @@ public class Compiler
 		new Sa2Xml(saRoot, baseName);
 		}
 	    
-	    /* System.out.println("[BUILD TS] ");
+	    System.out.println("[BUILD TS] ");
 	    Ts tableGlobale = new Sa2ts(saRoot).getTableGlobale();
 
 	    if(verboseLevel > 1){
 		System.out.println("[PRINT TS]");
 		tableGlobale.afficheTout(baseName);
-		}*/
+		}
 
-	    /*System.out.println("[TYPE CHECKING]");
-	      new SaTypeCheck(saRoot);*/
+	    System.out.println("[TYPE CHECKING]");
+	      new SaTypeCheck(saRoot);
 	    
 	    /*System.out.println("[BUILD C3A] ");
 	    C3a c3a = new Sa2c3a(saRoot, tableGlobale).getC3a();
