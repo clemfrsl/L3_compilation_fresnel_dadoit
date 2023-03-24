@@ -20,7 +20,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     }
 
     // P -> LDEC LDEC
-    public void visit(SaProg node) throws Exception
+    public Void visit(SaProg node) throws Exception
     {
         defaultIn(node);
         if(node.getVariables() != null)
@@ -28,64 +28,73 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
         if(node.getFonctions() != null)
             node.getFonctions().accept(this);
         defaultOut(node);
+        return null;
     }
 
     // DEC -> var id taille
-    public void visit(SaDecTab node) throws Exception{
+    public Void visit(SaDecTab node) throws Exception{
         defaultIn(node);
         defaultOut(node);
+        return null;
     }
 
-    public void visit(SaExp node) throws Exception
+    public Void visit(SaExp node) throws Exception
     {
         defaultIn(node);
         defaultOut(node);
+        return null;
     }
 
     // EXP -> entier
-    public void visit(SaExpInt node) throws Exception
+    public Void visit(SaExpInt node) throws Exception
     {
         defaultIn(node);
         defaultOut(node);
+        return null;
     }
 
     // EXP -> vrai
-    public void visit(SaExpVrai node) throws Exception
+    public Void visit(SaExpVrai node) throws Exception
     {
         defaultIn(node);
         defaultOut(node);
+        return null;
     }
 
     // EXP -> faux
-    public void visit(SaExpFaux node) throws Exception
+    public Void visit(SaExpFaux node) throws Exception
     {
         defaultIn(node);
         defaultOut(node);
+        return null;
     }
 
-    public void visit(SaExpVar node) throws Exception
+    public Void visit(SaExpVar node) throws Exception
     {
         defaultIn(node);
         node.getVar().accept(this);
         defaultOut(node);
+        return null;
     }
 
-    public void visit(SaInstEcriture node) throws Exception
+    public Void visit(SaInstEcriture node) throws Exception
     {
         defaultIn(node);
         node.getArg().accept(this);
         defaultOut(node);
+        return null;
     }
 
-    public void visit(SaInstTantQue node) throws Exception
+    public Void visit(SaInstTantQue node) throws Exception
     {
         defaultIn(node);
         node.getTest().accept(this);
         if (node.getFaire() != null)
             node.getFaire().accept(this);
         defaultOut(node);
+        return null;
     }
-    public void visit(SaLInst node) throws Exception
+    public Void visit(SaLInst node) throws Exception
     {
         defaultIn(node);
         if(node != null){
@@ -93,176 +102,196 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
             if(node.getQueue() != null) node.getQueue().accept(this);
         }
         defaultOut(node);
+        return null;
     }
 
     // DEC -> fct id LDEC LDEC LINST
-    public void visit(SaDecFonc node) throws Exception
+    public Void visit(SaDecFonc node) throws Exception
     {
         defaultIn(node);
         if(node.getParametres() != null) node.getParametres().accept(this);
         if(node.getVariable() != null) node.getVariable().accept(this);
         if(node.getCorps() != null) node.getCorps().accept(this);
         defaultOut(node);
+        return null;
     }
 
     // DEC -> var id
-    public void visit(SaDecVar node) throws Exception
+    public Void visit(SaDecVar node) throws Exception
     {
         defaultIn(node);
         defaultOut(node);
+        return null;
     }
 
-    public void visit(SaInstAffect node) throws Exception
+    public Void visit(SaInstAffect node) throws Exception
     {
         defaultIn(node);
         node.getLhs().accept(this);
         node.getRhs().accept(this);
         defaultOut(node);
+        return null;
     }
 
     // LDEC -> DEC LDEC
     // LDEC -> null
-    /*    public void visit(SaLDec node) throws Exception
+    /*    public Void visit(SaLDec node) throws Exception
     {
 	defaultIn(node);
 	node.getTete().accept(this);
 	if(node.getQueue() != null) node.getQueue().accept(this);
 	defaultOut(node);
-
+	return null;
 	}*/
 
-    public void visit(SaLDecVar node) throws Exception
+    public Void visit(SaLDecVar node) throws Exception
     {
         defaultIn(node);
         node.getTete().accept(this);
         if(node.getQueue() != null) node.getQueue().accept(this);
         defaultOut(node);
+        return null;
     }
 
-    public void visit(SaLDecFonc node) throws Exception
+    public Void visit(SaLDecFonc node) throws Exception
     {
         defaultIn(node);
         node.getTete().accept(this);
         if(node.getQueue() != null) node.getQueue().accept(this);
         defaultOut(node);
+        return null;
     }
 
-    public void visit(SaVarSimple node) throws Exception
+    public Void visit(SaVarSimple node) throws Exception
     {
         defaultIn(node);
         defaultOut(node);
+        return null;
     }
 
-    public void visit(SaAppel node) throws Exception
+    public Void visit(SaAppel node) throws Exception
     {
         defaultIn(node);
         if(node.getArguments() != null) node.getArguments().accept(this);
         defaultOut(node);
+        return null;
     }
 
-    public void visit(SaExpAppel node) throws Exception
+    public Void visit(SaExpAppel node) throws Exception
     {
         defaultIn(node);
         node.getVal().accept(this);
         defaultOut(node);
+        return null;
     }
 
     // EXP -> add EXP EXP
-    public void visit(SaExpAdd node) throws Exception
+    public Void visit(SaExpAdd node) throws Exception
     {
         defaultIn(node);
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
+        return null;
     }
 
     // EXP -> sub EXP EXP
-    public void visit(SaExpSub node) throws Exception
+    public Void visit(SaExpSub node) throws Exception
     {
         defaultIn(node);
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
+        return null;
     }
 
     // EXP -> mult EXP EXP
-    public void visit(SaExpMult node) throws Exception
+    public Void visit(SaExpMult node) throws Exception
     {
         defaultIn(node);
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
+        return null;
     }
 
     // EXP -> div EXP EXP
-    public void visit(SaExpDiv node) throws Exception
+    public Void visit(SaExpDiv node) throws Exception
     {
         defaultIn(node);
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
+        return null;
     }
 
     // EXP -> inf EXP EXP
-    public void visit(SaExpInf node) throws Exception
+    public Void visit(SaExpInf node) throws Exception
     {
         defaultIn(node);
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
+        return null;
     }
 
     // EXP -> eq EXP EXP
-    public void visit(SaExpEqual node) throws Exception
+    public Void visit(SaExpEqual node) throws Exception
     {
         defaultIn(node);
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
+        return null;
     }
 
     // EXP -> and EXP EXP
-    public void visit(SaExpAnd node) throws Exception
+    public Void visit(SaExpAnd node) throws Exception
     {
         defaultIn(node);
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
+        return null;
     }
 
 
     // EXP -> or EXP EXP
-    public void visit(SaExpOr node) throws Exception
+    public Void visit(SaExpOr node) throws Exception
     {
         defaultIn(node);
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
+        return null;
     }
 
     // EXP -> not EXP
-    public void visit(SaExpNot node) throws Exception
+    public Void visit(SaExpNot node) throws Exception
     {
         defaultIn(node);
         node.getOp1().accept(this);
         defaultOut(node);
+        return null;
     }
 
 
-    public void visit(SaExpLire node) throws Exception
+    public Void visit(SaExpLire node) throws Exception
     {
         defaultIn(node);
         defaultOut(node);
+        return null;
     }
 
-    public void visit(SaInstBloc node) throws Exception
+    public Void visit(SaInstBloc node) throws Exception
     {
         defaultIn(node);
         node.getVal().accept(this);
         defaultOut(node);
+        return null;
     }
 
-    public void visit(SaInstSi node) throws Exception
+    public Void visit(SaInstSi node) throws Exception
     {
         defaultIn(node);
         node.getTest().accept(this);
@@ -270,30 +299,34 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
             node.getAlors().accept(this);
         if(node.getSinon() != null) node.getSinon().accept(this);
         defaultOut(node);
+        return null;
     }
 
     // INST -> ret EXP
-    public void visit(SaInstRetour node) throws Exception
+    public Void visit(SaInstRetour node) throws Exception
     {
         defaultIn(node);
         node.getVal().accept(this);
         defaultOut(node);
+        return null;
     }
 
 
-    public void visit(SaLExp node) throws Exception
+    public Void visit(SaLExp node) throws Exception
     {
         defaultIn(node);
         node.getTete().accept(this);
         if(node.getQueue() != null)
             node.getQueue().accept(this);
         defaultOut(node);
+        return null;
     }
-    public void visit(SaVarIndicee node) throws Exception
+    public Void visit(SaVarIndicee node) throws Exception
     {
         defaultIn(node);
         node.getIndice().accept(this);
         defaultOut(node);
+        return null;
     }
 
 
