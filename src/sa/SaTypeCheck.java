@@ -20,6 +20,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     }
 
     // P -> LDEC LDEC
+    //todo
     public Void visit(SaProg node) throws Exception
     {
         defaultIn(node);
@@ -32,6 +33,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     }
 
     // DEC -> var id taille
+    //todo
     public Void visit(SaDecTab node) throws Exception{
         defaultIn(node);
         defaultOut(node);
@@ -49,6 +51,8 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaExpInt node) throws Exception
     {
         defaultIn(node);
+        if (node.getType() != Type.ENTIER)
+            throw new ErrorException(Error.TYPE, "Error");
         defaultOut(node);
         return null;
     }
@@ -57,6 +61,8 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaExpVrai node) throws Exception
     {
         defaultIn(node);
+        if (node.getType() != Type.BOOL)
+            throw new ErrorException(Error.TYPE, "Error");
         defaultOut(node);
         return null;
     }
@@ -65,6 +71,8 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaExpFaux node) throws Exception
     {
         defaultIn(node);
+        if (node.getType() != Type.BOOL)
+            throw new ErrorException(Error.TYPE, "Error");
         defaultOut(node);
         return null;
     }
@@ -85,9 +93,12 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
         return null;
     }
 
+    //done
     public Void visit(SaInstTantQue node) throws Exception
     {
         defaultIn(node);
+        if (node.getTest().getType() != Type.BOOL)
+            throw new ErrorException(Error.TYPE, "Error");
         node.getTest().accept(this);
         if (node.getFaire() != null)
             node.getFaire().accept(this);
@@ -109,6 +120,8 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaDecFonc node) throws Exception
     {
         defaultIn(node);
+        //todo
+        //visit(node.getVariable());
         if(node.getParametres() != null) node.getParametres().accept(this);
         if(node.getVariable() != null) node.getVariable().accept(this);
         if(node.getCorps() != null) node.getCorps().accept(this);
@@ -186,9 +199,12 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     }
 
     // EXP -> add EXP EXP
+    //done
     public Void visit(SaExpAdd node) throws Exception
     {
         defaultIn(node);
+        if (node.getOp1().getType() != node.getType() && node.getOp2().getType() != node.getType())
+            throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
@@ -196,9 +212,12 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     }
 
     // EXP -> sub EXP EXP
+    //done
     public Void visit(SaExpSub node) throws Exception
     {
         defaultIn(node);
+        if (node.getOp1().getType() != node.getType() && node.getOp2().getType() != node.getType())
+            throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
@@ -206,9 +225,12 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     }
 
     // EXP -> mult EXP EXP
+    //done
     public Void visit(SaExpMult node) throws Exception
     {
         defaultIn(node);
+        if (node.getOp1().getType() != node.getType() && node.getOp2().getType() != node.getType())
+            throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
@@ -216,9 +238,12 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     }
 
     // EXP -> div EXP EXP
+    //done
     public Void visit(SaExpDiv node) throws Exception
     {
         defaultIn(node);
+        if (node.getOp1().getType() != node.getType() && node.getOp2().getType() != node.getType())
+            throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
@@ -226,9 +251,12 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     }
 
     // EXP -> inf EXP EXP
+    //done
     public Void visit(SaExpInf node) throws Exception
     {
         defaultIn(node);
+        if (node.getOp1().getType() != node.getType() && node.getOp2().getType() != node.getType())
+            throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
@@ -236,9 +264,12 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     }
 
     // EXP -> eq EXP EXP
+    //done
     public Void visit(SaExpEqual node) throws Exception
     {
         defaultIn(node);
+        if (node.getOp1().getType() != node.getType() && node.getOp2().getType() != node.getType())
+            throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
@@ -246,9 +277,12 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     }
 
     // EXP -> and EXP EXP
+    //done
     public Void visit(SaExpAnd node) throws Exception
     {
         defaultIn(node);
+        if (node.getOp1().getType() != node.getType() && node.getOp2().getType() != node.getType())
+            throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
@@ -257,9 +291,12 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
 
 
     // EXP -> or EXP EXP
+    //done
     public Void visit(SaExpOr node) throws Exception
     {
         defaultIn(node);
+        if (node.getOp1().getType() != node.getType() && node.getOp2().getType() != node.getType())
+            throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
         defaultOut(node);
@@ -267,9 +304,12 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     }
 
     // EXP -> not EXP
+    //done
     public Void visit(SaExpNot node) throws Exception
     {
         defaultIn(node);
+        if (node.getOp1().getType() != node.getType())
+            throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         defaultOut(node);
         return null;
@@ -291,9 +331,12 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
         return null;
     }
 
+    //done
     public Void visit(SaInstSi node) throws Exception
     {
         defaultIn(node);
+        if (node.getTest().getType() != Type.BOOL)
+            throw new ErrorException(Error.TYPE, "Error");
         node.getTest().accept(this);
         if (node.getAlors() != null)
             node.getAlors().accept(this);
@@ -311,7 +354,6 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
         return null;
     }
 
-
     public Void visit(SaLExp node) throws Exception
     {
         defaultIn(node);
@@ -321,9 +363,12 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
         defaultOut(node);
         return null;
     }
+    //done
     public Void visit(SaVarIndicee node) throws Exception
     {
         defaultIn(node);
+        if (node.getIndice().getType() != Type.ENTIER)
+            throw new ErrorException(Error.TYPE, "Error");
         node.getIndice().accept(this);
         defaultOut(node);
         return null;
