@@ -243,8 +243,166 @@
 	varloc5.saout         INCORRECT
 Évaluation de Diff de c3a :
 0/79 correct (  0.00%)
+	add1.c3a            INCORRECT
+	add2.c3a            INCORRECT
+	affect1.c3a         INCORRECT
+	affect2.c3a         INCORRECT
+	and1.c3a            INCORRECT
+	and2.c3a            INCORRECT
+	and3.c3a            INCORRECT
+	and4.c3a            INCORRECT
+	and5.c3a            INCORRECT
+	appel-retour1.c3a   INCORRECT
+	appel1.c3a          INCORRECT
+	appel2.c3a          INCORRECT
+	appel3.c3a          INCORRECT
+	div1.c3a            INCORRECT
+	div2.c3a            INCORRECT
+	div3.c3a            INCORRECT
+	div4.c3a            INCORRECT
+	ecrire1.c3a         INCORRECT
+	ecrire2.c3a         INCORRECT
+	mult1.c3a           INCORRECT
+	mult2.c3a           INCORRECT
+	mult3.c3a           INCORRECT
+	not1.c3a            INCORRECT
+	not2.c3a            INCORRECT
+	not3.c3a            INCORRECT
+	or1.c3a             INCORRECT
+	or2.c3a             INCORRECT
+	or3.c3a             INCORRECT
+	or4.c3a             INCORRECT
+	or5.c3a             INCORRECT
+	parenth1.c3a        INCORRECT
+	parenth2.c3a        INCORRECT
+	prio34-1.c3a        INCORRECT
+	prio34-2.c3a        INCORRECT
+	prio34-3.c3a        INCORRECT
+	prio34-4.c3a        INCORRECT
+	prio56-2.c3a        INCORRECT
+	prio67-1.c3a        INCORRECT
+	prio67-2.c3a        INCORRECT
+	si1.c3a             INCORRECT
+	si2.c3a             INCORRECT
+	si3.c3a             INCORRECT
+	si4.c3a             INCORRECT
+	si5.c3a             INCORRECT
+	sub1.c3a            INCORRECT
+	sub2.c3a            INCORRECT
+	sub3.c3a            INCORRECT
+	tab1.c3a            INCORRECT
+	tab2.c3a            INCORRECT
+	tab3.c3a            INCORRECT
+	tab4.c3a            INCORRECT
+	varglob1.c3a        INCORRECT
+	varglob2.c3a        INCORRECT
+	varglob3.c3a        INCORRECT
+	varglob4.c3a        INCORRECT
+	varloc1.c3a         INCORRECT
+	varloc2.c3a         INCORRECT
+	varloc3.c3a         INCORRECT
+	varloc4.c3a         INCORRECT
+	varloc5.c3a         INCORRECT
+	affect3.c3a        NON-EXISTANT
+	appel-param1.c3a   NON-EXISTANT
+	appel-param2.c3a   NON-EXISTANT
+	appel-param3.c3a   NON-EXISTANT
+	egal1.c3a          NON-EXISTANT
+	egal2.c3a          NON-EXISTANT
+	egal3.c3a          NON-EXISTANT
+	inf1.c3a           NON-EXISTANT
+	inf2.c3a           NON-EXISTANT
+	inf3.c3a           NON-EXISTANT
+	prio45-1.c3a       NON-EXISTANT
+	prio45-2.c3a       NON-EXISTANT
+	prio45-3.c3a       NON-EXISTANT
+	prio45-4.c3a       NON-EXISTANT
+	prio56-1.c3a       NON-EXISTANT
+	rec1.c3a           NON-EXISTANT
+	tantque1.c3a       NON-EXISTANT
+	tantque2.c3a       NON-EXISTANT
+	tri.c3a            NON-EXISTANT
 Évaluation de Execution du c3a :
 0/79 correct (  0.00%)
+	add1.c3aout            INCORRECT
+	add2.c3aout            INCORRECT
+	affect1.c3aout         INCORRECT
+	affect2.c3aout         INCORRECT
+	and1.c3aout            INCORRECT
+	and2.c3aout            INCORRECT
+	and3.c3aout            INCORRECT
+	and4.c3aout            INCORRECT
+	and5.c3aout            INCORRECT
+	appel-retour1.c3aout   INCORRECT
+	appel1.c3aout          INCORRECT
+	appel2.c3aout          INCORRECT
+	appel3.c3aout          INCORRECT
+	div1.c3aout            INCORRECT
+	div2.c3aout            INCORRECT
+	div3.c3aout            INCORRECT
+	div4.c3aout            INCORRECT
+	ecrire1.c3aout         INCORRECT
+	ecrire2.c3aout         INCORRECT
+	mult1.c3aout           INCORRECT
+	mult2.c3aout           INCORRECT
+	mult3.c3aout           INCORRECT
+	not1.c3aout            INCORRECT
+	not2.c3aout            INCORRECT
+	not3.c3aout            INCORRECT
+	or1.c3aout             INCORRECT
+	or2.c3aout             INCORRECT
+	or3.c3aout             INCORRECT
+	or4.c3aout             INCORRECT
+	or5.c3aout             INCORRECT
+	parenth1.c3aout        INCORRECT
+	parenth2.c3aout        INCORRECT
+	prio34-1.c3aout        INCORRECT
+	prio34-2.c3aout        INCORRECT
+	prio34-3.c3aout        INCORRECT
+	prio34-4.c3aout        INCORRECT
+	prio56-2.c3aout        INCORRECT
+	prio67-1.c3aout        INCORRECT
+	prio67-2.c3aout        INCORRECT
+	si1.c3aout             INCORRECT
+	si2.c3aout             INCORRECT
+	si3.c3aout             INCORRECT
+	si4.c3aout             INCORRECT
+	si5.c3aout             INCORRECT
+	sub1.c3aout            INCORRECT
+	sub2.c3aout            INCORRECT
+	sub3.c3aout            INCORRECT
+	tab1.c3aout            INCORRECT
+	tab2.c3aout            INCORRECT
+	tab3.c3aout            INCORRECT
+	tab4.c3aout            INCORRECT
+	varglob1.c3aout        INCORRECT
+	varglob2.c3aout        INCORRECT
+	varglob3.c3aout        INCORRECT
+	varglob4.c3aout        INCORRECT
+	varloc1.c3aout         INCORRECT
+	varloc2.c3aout         INCORRECT
+	varloc3.c3aout         INCORRECT
+	varloc4.c3aout         INCORRECT
+	varloc5.c3aout         INCORRECT
+	affect3.c3aout        NON-EXISTANT
+	appel-param1.c3aout   NON-EXISTANT
+	appel-param2.c3aout   NON-EXISTANT
+	appel-param3.c3aout   NON-EXISTANT
+	egal1.c3aout          NON-EXISTANT
+	egal2.c3aout          NON-EXISTANT
+	egal3.c3aout          NON-EXISTANT
+	inf1.c3aout           NON-EXISTANT
+	inf2.c3aout           NON-EXISTANT
+	inf3.c3aout           NON-EXISTANT
+	prio45-1.c3aout       NON-EXISTANT
+	prio45-2.c3aout       NON-EXISTANT
+	prio45-3.c3aout       NON-EXISTANT
+	prio45-4.c3aout       NON-EXISTANT
+	prio56-1.c3aout       NON-EXISTANT
+	rec1.c3aout           NON-EXISTANT
+	tantque1.c3aout       NON-EXISTANT
+	tantque2.c3aout       NON-EXISTANT
+	tri.c3aout            NON-EXISTANT
 Évaluation de Diff de pre-nasm :
 0/79 correct (  0.00%)
 Évaluation de Execution du pre-nasm :
@@ -311,4 +469,638 @@
 	inf3.l      INCORRECT
 	retour1.l   INCORRECT
 	retour2.l   INCORRECT
+------------------------------EVALUATION ERRORS------------------------------
+ERROR evaluateC3a for input add1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
 
+ERROR evaluateC3a for input add2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input affect1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input affect2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input and1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input and2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input and3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input and4.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input and5.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input appel-retour1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input appel1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input appel2.l : 'Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at c3a.C3aEval.<init>(C3aEval.java:64)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input appel3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input div1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input div2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input div3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input div4.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input ecrire1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input ecrire2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input mult1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input mult2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input mult3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input not1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input not2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input not3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input or1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input or2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input or3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input or4.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input or5.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input parenth1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input parenth2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input prio34-1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input prio34-2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input prio34-3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input prio34-4.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input prio56-2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseIfInstr(C3aParser.java:189)
+	at c3a.C3aParser.processLine(C3aParser.java:57)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input prio67-1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input prio67-2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input si1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input si2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input si3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input si4.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input si5.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input sub1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input sub2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input sub3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input tab1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input tab2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input tab3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input tab4.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input varglob1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input varglob2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input varglob3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input varglob4.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input varloc1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input varloc2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input varloc3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input varloc4.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "ts.Ts.getVar(String)" because the return value of "ts.Ts.getTableLocale(String)" is null
+	at c3a.C3aParser.getVarOp(C3aParser.java:160)
+	at c3a.C3aParser.chooseRightOperandType(C3aParser.java:123)
+	at c3a.C3aParser.parseEqualInstr(C3aParser.java:98)
+	at c3a.C3aParser.processLine(C3aParser.java:51)
+	at java.base/java.nio.file.FileChannelLinesSpliterator.forEachRemaining(FileChannelLinesSpliterator.java:133)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:772)
+	at c3a.C3aParser.parse(C3aParser.java:33)
+	at C3aVM.run(C3aVM.java:28)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input varloc5.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'

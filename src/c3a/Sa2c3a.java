@@ -21,38 +21,27 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
 	}
 	catch(Exception e){}
     }
-
-    public C3aOperand visit(SaExpAdd node) throws Exception {
-        defaultIn(node);
-        C3aOperand op1 = node.getOp1().accept(this);
-        C3aOperand op2 = node.getOp2().accept(this);
-        C3aOperand result = c3a.newTemp();
-        c3a.ajouteInst(new C3aInstAdd(op1, op2, result, ""));
-        defaultOut(node);
-        return result;
+    public void defaultIn(SaNode node) {
+        //for(int i = 0; i < indentation; i++){System.out.print(" ");}
+        //indentation++;
+        //System.out.println("<" + node.getClass().getSimpleName() + ">");
     }
 
-    public void defaultIn(SaNode node)
-    {
-	//for(int i = 0; i < indentation; i++){System.out.print(" ");}
-	//indentation++;
-	//System.out.println("<" + node.getClass().getSimpleName() + ">");
+    public void defaultOut(SaNode node) {
+        //indentation--;
+        //	for(int i = 0; i < indentation; i++){System.out.print(" ");}
+        //	System.out.println("</" + node.getClass().getSimpleName() + ">");
     }
 
-    public void defaultOut(SaNode node)
-    {
-	//indentation--;
-	//	for(int i = 0; i < indentation; i++){System.out.print(" ");}
-	//	System.out.println("</" + node.getClass().getSimpleName() + ">");
-    }
+
+
+
 
     public C3aOperand visit(SaProg node) throws Exception
     {
         defaultIn(node);
-        if(node.getVariables() != null)
-            node.getVariables().accept(this);
-        if(node.getFonctions() != null)
-            node.getFonctions().accept(this);
+        C3aOperand op1 = node.getVariables().accept(this);
+        C3aOperand op2 = node.getFonctions().accept(this);
         defaultOut(node);
         return null;
     }
@@ -60,8 +49,11 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
     // DEC -> var id taille
     public C3aOperand visit(SaDecTab node) throws Exception{
         defaultIn(node);
+        C3aOperand op1 = node.getOp1().accept(this);
+        C3aOperand result = c3a.newTemp();
+        c3a.ajouteInst(new C3aInstAdd(op1, op2, result, ""));
         defaultOut(node);
-        return null;
+        return result;
     }
 
     public C3aOperand visit(SaExp node) throws Exception
@@ -212,73 +204,87 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
     }
 
     // EXP -> add EXP EXP
-    public C3aOperand visit(SaExpAdd node) throws Exception
-    {
+    public C3aOperand visit(SaExpAdd node) throws Exception {
         defaultIn(node);
-        node.getOp1().accept(this);
-        node.getOp2().accept(this);
+        C3aOperand op1 = node.getOp1().accept(this);
+        C3aOperand op2 = node.getOp2().accept(this);
+        C3aOperand result = c3a.newTemp();
+        c3a.ajouteInst(new C3aInstAdd(op1, op2, result, ""));
         defaultOut(node);
-        return null;
+        return result;
     }
 
     // EXP -> sub EXP EXP
     public C3aOperand visit(SaExpSub node) throws Exception
     {
         defaultIn(node);
-        node.getOp1().accept(this);
-        node.getOp2().accept(this);
+        C3aOperand op1 = node.getOp1().accept(this);
+        C3aOperand op2 = node.getOp2().accept(this);
+        C3aOperand result = c3a.newTemp();
+        c3a.ajouteInst(new C3aInstSub(op1, op2, result, ""));
         defaultOut(node);
-        return null;
+        return result;
     }
 
     // EXP -> mult EXP EXP
     public C3aOperand visit(SaExpMult node) throws Exception
     {
         defaultIn(node);
-        node.getOp1().accept(this);
-        node.getOp2().accept(this);
+        C3aOperand op1 = node.getOp1().accept(this);
+        C3aOperand op2 = node.getOp2().accept(this);
+        C3aOperand result = c3a.newTemp();
+        c3a.ajouteInst(new C3aInstMult(op1, op2, result, ""));
         defaultOut(node);
-        return null;
+        return result;
     }
 
     // EXP -> div EXP EXP
     public C3aOperand visit(SaExpDiv node) throws Exception
     {
         defaultIn(node);
-        node.getOp1().accept(this);
-        node.getOp2().accept(this);
+        C3aOperand op1 = node.getOp1().accept(this);
+        C3aOperand op2 = node.getOp2().accept(this);
+        C3aOperand result = c3a.newTemp();
+        c3a.ajouteInst(new C3aInstDiv(op1, op2, result, ""));
         defaultOut(node);
-        return null;
+        return result;
     }
 
     // EXP -> inf EXP EXP
+    //todo
     public C3aOperand visit(SaExpInf node) throws Exception
     {
         defaultIn(node);
-        node.getOp1().accept(this);
-        node.getOp2().accept(this);
+        C3aOperand op1 = node.getOp1().accept(this);
+        C3aOperand op2 = node.getOp2().accept(this);
+        C3aOperand result = c3a.newTemp();
+        c3a.ajouteInst(new C3aInstJumpIfLess(op1, op2, result, ""));
         defaultOut(node);
-        return null;
+        return result;
     }
 
     // EXP -> eq EXP EXP
     public C3aOperand visit(SaExpEqual node) throws Exception
     {
         defaultIn(node);
-        node.getOp1().accept(this);
-        node.getOp2().accept(this);
+        C3aOperand op1 = node.getOp1().accept(this);
+        C3aOperand op2 = node.getOp2().accept(this);
+        C3aOperand result = c3a.newTemp();
+        c3a.ajouteInst(new C3aInstJumpIfEqual(op1, op2, result, ""));
         defaultOut(node);
-        return null;
+        return result;
     }
 
     // EXP -> and EXP EXP
     public C3aOperand visit(SaExpAnd node) throws Exception
     {
         defaultIn(node);
-        node.getOp1().accept(this);
-        node.getOp2().accept(this);
+        C3aOperand op1 = node.getOp1().accept(this);
+        C3aOperand op2 = node.getOp2().accept(this);
+        C3aOperand result = c3a.newTemp();
+        c3a.ajouteInst(new C3aInstAdd(op1, op2, result, ""));
         defaultOut(node);
-        return null;
+        return result;
     }
 
 
