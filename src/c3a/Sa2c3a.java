@@ -145,7 +145,9 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
     {
         defaultIn(node);
         node.getLhs().accept(this);
-        node.getRhs().accept(this);
+        C3aOperand op1 = node.getRhs().accept(this);
+        C3aOperand result = c3a.newTemp();
+        c3a.ajouteInst(new C3aInstAffect(op1, result, ""));
         defaultOut(node);
         return null;
     }
@@ -256,7 +258,7 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
         defaultIn(node);
         C3aOperand op1 = node.getOp1().accept(this);
         C3aOperand op2 = node.getOp2().accept(this);
-        C3aOperand result = c3a.newTemp();
+        C3aOperand result = c3a.newAutoLabel();
         c3a.ajouteInst(new C3aInstJumpIfLess(op1, op2, result, ""));
         defaultOut(node);
         return result;
@@ -268,7 +270,7 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
         defaultIn(node);
         C3aOperand op1 = node.getOp1().accept(this);
         C3aOperand op2 = node.getOp2().accept(this);
-        C3aOperand result = c3a.newTemp();
+        C3aOperand result = c3a.newAutoLabel();
         c3a.ajouteInst(new C3aInstJumpIfEqual(op1, op2, result, ""));
         defaultOut(node);
         return result;
@@ -331,9 +333,10 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
         C3aOperand result = null;
         node.getTest().accept(this);
         if (node.getAlors() != null)
-            result = node.getAlors().accept(this);
+            node.getAlors().accept(this);
         if(node.getSinon() != null)
-            result = node.getSinon().accept(this);
+            node.getSinon().accept(this);
+        result = c3a.newAutoLabel();
         c3a.ajouteInst(new C3aInstJump(result, ""));
         defaultOut(node);
         return null;
