@@ -175,6 +175,5 @@ public class Sa2ts extends SaDepthFirstVisitor <Void> {
 		node.tsItem = tableGlobale.getFct(node.getNom());
 		defaultOut(node);
 		return null;
-		//todo
 	}
 }

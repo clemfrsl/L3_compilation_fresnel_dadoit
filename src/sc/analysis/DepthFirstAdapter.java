@@ -819,6 +819,16 @@ public class DepthFirstAdapter extends AnalysisAdapter
         defaultOut(node);
     }
 
+    @Override
+    public void caseAPasouExp(APasouExp node)
+    {
+        inAPasouExp(node);
+        if(node.getE1() != null)
+        {
+            node.getE1().apply(this);
+        }
+        outAPasouExp(node);
+    }
 
     public void inAEtE1(AEtE1 node)
     {

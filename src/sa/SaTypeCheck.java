@@ -171,13 +171,6 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
         return null;
     }
 
-    public Void visit(SaVarSimple node) throws Exception
-    {
-        defaultIn(node);
-        defaultOut(node);
-        return null;
-    }
-
     //done
     public Void visit(SaAppel node) throws Exception
     {
@@ -360,7 +353,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaInstRetour node) throws Exception
     {
         defaultIn(node);
-        if(node.getVal().getType() != this.fonctionCourante.typeRetour)
+        if(node.getType() != this.fonctionCourante.typeRetour)
             throw new ErrorException(Error.TYPE, "Error");
         node.getVal().accept(this);
         defaultOut(node);

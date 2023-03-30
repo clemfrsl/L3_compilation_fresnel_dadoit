@@ -596,16 +596,6 @@ public class AnalysisAdapter implements Analysis
         defaultCase(node);
     }
 
-    @Override
-    public void caseATypefauxTv(ATypefauxTv node) {
-        defaultCase(node);
-    }
-
-    @Override
-    public void caseATypevraiTv(ATypevraiTv node) {
-        defaultCase(node);
-    }
-
     public void defaultCase(@SuppressWarnings("unused") Node node)
     {
         // do nothing
