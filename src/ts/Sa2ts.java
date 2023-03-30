@@ -64,6 +64,7 @@ public class Sa2ts extends SaDepthFirstVisitor <Void> {
 		if(node.getCorps() != null){
 			node.getCorps().accept(this);
 		}
+		node.tsItem = tableGlobale.getFct(identif);
 		this.context = Context.GLOBAL;
 		defaultOut(node);
 		return null;
@@ -74,19 +75,21 @@ public class Sa2ts extends SaDepthFirstVisitor <Void> {
 	public Void visit(SaDecTab node) throws Exception {
 		defaultIn(node);
 		String identif = node.getNom();
+		Type type = node.getType();
+		int taille = node.getTaille();
 		if(this.context == Context.GLOBAL){
 			if(this.tableGlobale.getVar(identif) != null)
 				throw new ErrorException(Error.TS, "Variable already exist.");
-			node.tsItem = tableGlobale.addTab(identif, node.getType(), node.getTaille());
+			node.setTsItem(tableGlobale.addTab(identif, type, taille));
 		}
 		else {
 			if(this.tableLocaleCourante.getVar(identif) != null)
 				throw new ErrorException(Error.TS, "Variable already exist.");
 			if(this.context == Context.LOCAL){
-				tableGlobale.addTab(identif, node.getType(), node.getTaille());
+				node.setTsItem(tableGlobale.addTab(identif, type, taille));
 			}
 			if(this.context == Context.PARAM){
-				tableGlobale.addParam(identif, node.getType());
+				node.setTsItem(tableGlobale.addParam(identif, type));
 			}
 		}
 		defaultOut(node);
@@ -98,18 +101,20 @@ public class Sa2ts extends SaDepthFirstVisitor <Void> {
 	public Void visit(SaDecVar node) throws Exception {
 		defaultIn(node);
 		String identif = node.getNom();
+		Type type = node.getType();
+
 		if(this.context == Context.GLOBAL){
 			if(tableGlobale.getVar(identif) != null)
 				throw new ErrorException(Error.TS, "Variable already exist.");
-			tableGlobale.addVar(identif, node.getType());
+			node.setTsItem(tableGlobale.addVar(identif, type));
 		}
 		else {
 			if(tableLocaleCourante.getVar(identif) != null)
 				throw new ErrorException(Error.TS, "Variable already exist.");
 			if(this.context == Context.PARAM)
-				tableLocaleCourante.addParam(identif, node.getType());
+				node.setTsItem(tableLocaleCourante.addParam(identif, type));
 			else
-				tableLocaleCourante.addVar(identif, node.getType());
+				node.setTsItem(tableLocaleCourante.addVar(identif, type));
 		}
 		defaultOut(node);
 		return null;
@@ -131,7 +136,6 @@ public class Sa2ts extends SaDepthFirstVisitor <Void> {
 			node.tsItem = (TsItemVarSimple) tableGlobale.getVar(identif);
 		} else
 			throw new ErrorException(Error.TS, "Var not found");
-
 		defaultOut(node);
 		return null;
 	}
@@ -140,17 +144,15 @@ public class Sa2ts extends SaDepthFirstVisitor <Void> {
 	public Void visit(SaVarIndicee node) throws Exception
 	{
 		defaultIn(node);
-		TsItemVar item;
-		item = tableGlobale.getVar(node.getNom());
-		if(item == null ){
+		String identif = node.getNom();
+		if(tableGlobale.getVar(identif) == null )
 			throw new ErrorException(Error.TS, "Var not found");
-		}
-		if(!(item instanceof TsItemVarTab))
+
+		if(!((tableGlobale.getVar(identif)) instanceof TsItemVarTab))
 			throw new ErrorException(Error.TS, "Error");
 		if(node.getIndice() == null)
 			throw new ErrorException(Error.TS, "Indice not found");
-		node.tsItem = item;
-
+		node.tsItem = tableGlobale.getVar(identif);
 		node.getIndice().accept(this);
 		defaultOut(node);
 		return null;

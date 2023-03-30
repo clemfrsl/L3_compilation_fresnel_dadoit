@@ -31,9 +31,12 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
         return null;
     }
 
+    //done
     // DEC -> var id taille
     public Void visit(SaDecTab node) throws Exception{
         defaultIn(node);
+        if (node.getType() != Type.ENTIER)
+            throw new ErrorException(Error.TYPE, "Error");
         defaultOut(node);
         return null;
     }
@@ -61,7 +64,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaExpVrai node) throws Exception
     {
         defaultIn(node);
-        if (node.getType() != Type.BOOL)
+        if (node.getType() != Type.BOOL || node.getVal() != Boolean.TRUE)
             throw new ErrorException(Error.TYPE, "Error");
         defaultOut(node);
         return null;
@@ -72,7 +75,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaExpFaux node) throws Exception
     {
         defaultIn(node);
-        if (node.getType() != Type.BOOL)
+        if (node.getType() != Type.BOOL|| node.getVal() != Boolean.FALSE)
             throw new ErrorException(Error.TYPE, "Error");
         defaultOut(node);
         return null;
@@ -150,17 +153,6 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
         return null;
     }
 
-    // LDEC -> DEC LDEC
-    // LDEC -> null
-    /*    public Void visit(SaLDec node) throws Exception
-    {
-	defaultIn(node);
-	node.getTete().accept(this);
-	if(node.getQueue() != null) node.getQueue().accept(this);
-	defaultOut(node);
-	return null;
-	}*/
-
     public Void visit(SaLDecVar node) throws Exception
     {
         defaultIn(node);
@@ -190,8 +182,19 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaAppel node) throws Exception
     {
         defaultIn(node);
-        if(node.getArguments().getTete().getType() != node.getType())
-           throw new ErrorException(Error.TYPE, "Error");
+        if(node.getArguments().length() != this.fonctionCourante.nbArgs)
+            throw new ErrorException(Error.TYPE, "Error");
+        if(node.getArguments().getTete().getType() != this.fonctionCourante.saDecFonc.getParametres().getTete().getType())
+            throw new ErrorException(Error.TYPE, "Error");
+        SaLExp queue = node.getArguments().getQueue();
+        SaLDecVar queueC = this.fonctionCourante.saDecFonc.getParametres().getQueue();
+        for (int i=0; i<node.getArguments().length(); i++){
+            if(queue.getTete().getType() != queueC.getTete().getType())
+                throw new ErrorException(Error.TYPE, "Error");
+            queue = queue.getQueue();
+            queueC = queueC.getQueue();
+        }
+
         if(node.getArguments() != null) node.getArguments().accept(this);
         defaultOut(node);
         return null;
@@ -210,7 +213,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaExpAdd node) throws Exception
     {
         defaultIn(node);
-        if (node.getOp1().getType() != node.getType() || node.getOp2().getType() != node.getType())
+        if (node.getOp1().getType() != Type.ENTIER || node.getOp2().getType() != Type.ENTIER)
             throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
@@ -223,7 +226,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaExpSub node) throws Exception
     {
         defaultIn(node);
-        if (node.getOp1().getType() != node.getType() || node.getOp2().getType() != node.getType())
+        if (node.getOp1().getType() != Type.ENTIER || node.getOp2().getType() != Type.ENTIER)
             throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
@@ -236,7 +239,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaExpMult node) throws Exception
     {
         defaultIn(node);
-        if (node.getOp1().getType() != node.getType() || node.getOp2().getType() != node.getType())
+        if (node.getOp1().getType() != Type.ENTIER || node.getOp2().getType() != Type.ENTIER)
             throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
@@ -249,7 +252,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaExpDiv node) throws Exception
     {
         defaultIn(node);
-        if (node.getOp1().getType() != node.getType() || node.getOp2().getType() != node.getType())
+        if (node.getOp1().getType() != Type.ENTIER || node.getOp2().getType() != Type.ENTIER)
             throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
@@ -262,7 +265,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaExpInf node) throws Exception
     {
         defaultIn(node);
-        if (node.getOp1().getType() != node.getType() || node.getOp2().getType() != node.getType())
+        if (node.getOp1().getType() != Type.ENTIER || node.getOp2().getType() != Type.ENTIER)
             throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
@@ -275,7 +278,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaExpEqual node) throws Exception
     {
         defaultIn(node);
-        if (node.getOp1().getType() != node.getType() || node.getOp2().getType() != node.getType())
+        if (node.getOp1().getType() != node.getOp2().getType())
             throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
@@ -288,7 +291,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaExpAnd node) throws Exception
     {
         defaultIn(node);
-        if (node.getOp1().getType() != node.getType() || node.getOp2().getType() != node.getType())
+        if ((node.getOp1().getType() != Type.BOOL || node.getOp2().getType() != Type.BOOL))
             throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
@@ -301,7 +304,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaExpOr node) throws Exception
     {
         defaultIn(node);
-        if (node.getOp1().getType() != node.getType() || node.getOp2().getType() != node.getType())
+        if (node.getOp1().getType() != Type.BOOL || node.getOp2().getType() != Type.BOOL)
             throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         node.getOp2().accept(this);
@@ -314,7 +317,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaExpNot node) throws Exception
     {
         defaultIn(node);
-        if (node.getOp1().getType() != node.getType())
+        if (node.getOp1().getType() != Type.BOOL)
             throw new ErrorException(Error.TYPE, "Error");
         node.getOp1().accept(this);
         defaultOut(node);
@@ -356,7 +359,7 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaInstRetour node) throws Exception
     {
         defaultIn(node);
-        if(node.getVal().getType() != node.getType())
+        if(node.getVal().getType() != this.fonctionCourante.typeRetour)
             throw new ErrorException(Error.TYPE, "Error");
         node.getVal().accept(this);
         defaultOut(node);
@@ -397,6 +400,3 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
 
 
 }
-
-//fonction dans courante
-//arguments et valeur retour

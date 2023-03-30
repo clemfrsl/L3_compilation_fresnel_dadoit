@@ -161,248 +161,248 @@
 	varloc4.ts         CORRECT
 	varloc5.ts         CORRECT
 Évaluation de Execution de sa :
-72/79 correct ( 91.14%)
-	add1.saout       CORRECT
-	add2.saout       CORRECT
-	affect1.saout    CORRECT
-	affect2.saout    CORRECT
-	and1.saout       CORRECT
-	and2.saout       CORRECT
-	and3.saout       CORRECT
-	and4.saout       CORRECT
-	and5.saout       CORRECT
-	appel1.saout     CORRECT
-	appel2.saout     CORRECT
-	appel3.saout     CORRECT
-	div1.saout       CORRECT
-	div2.saout       CORRECT
-	div3.saout       CORRECT
-	div4.saout       CORRECT
-	ecrire1.saout    CORRECT
-	ecrire2.saout    CORRECT
-	egal1.saout      CORRECT
-	egal2.saout      CORRECT
-	egal3.saout      CORRECT
-	inf1.saout       CORRECT
-	inf2.saout       CORRECT
-	inf3.saout       CORRECT
-	mult1.saout      CORRECT
-	mult2.saout      CORRECT
-	mult3.saout      CORRECT
-	not1.saout       CORRECT
-	not2.saout       CORRECT
-	not3.saout       CORRECT
-	or1.saout        CORRECT
-	or2.saout        CORRECT
-	or3.saout        CORRECT
-	or4.saout        CORRECT
-	or5.saout        CORRECT
-	parenth1.saout   CORRECT
-	parenth2.saout   CORRECT
-	prio34-1.saout   CORRECT
-	prio34-2.saout   CORRECT
-	prio34-3.saout   CORRECT
-	prio34-4.saout   CORRECT
-	prio45-1.saout   CORRECT
-	prio45-2.saout   CORRECT
-	prio45-3.saout   CORRECT
-	prio45-4.saout   CORRECT
-	prio56-1.saout   CORRECT
-	prio56-2.saout   CORRECT
-	prio67-1.saout   CORRECT
-	prio67-2.saout   CORRECT
-	si1.saout        CORRECT
-	si2.saout        CORRECT
-	si3.saout        CORRECT
-	si4.saout        CORRECT
-	si5.saout        CORRECT
-	sub1.saout       CORRECT
-	sub2.saout       CORRECT
-	sub3.saout       CORRECT
-	tab1.saout       CORRECT
-	tab2.saout       CORRECT
-	tab3.saout       CORRECT
-	tab4.saout       CORRECT
-	tantque1.saout   CORRECT
-	tantque2.saout   CORRECT
-	varglob1.saout   CORRECT
-	varglob2.saout   CORRECT
-	varglob3.saout   CORRECT
-	varglob4.saout   CORRECT
-	varloc1.saout    CORRECT
-	varloc2.saout    CORRECT
-	varloc3.saout    CORRECT
-	varloc4.saout    CORRECT
-	varloc5.saout    CORRECT
-	affect3.saout         INCORRECT
-	appel-param1.saout    INCORRECT
-	appel-param2.saout    INCORRECT
-	appel-param3.saout    INCORRECT
-	appel-retour1.saout   INCORRECT
-	rec1.saout            INCORRECT
-	tri.saout             INCORRECT
+79/79 correct (100.00%)
+	add1.saout            CORRECT
+	add2.saout            CORRECT
+	affect1.saout         CORRECT
+	affect2.saout         CORRECT
+	affect3.saout         CORRECT
+	and1.saout            CORRECT
+	and2.saout            CORRECT
+	and3.saout            CORRECT
+	and4.saout            CORRECT
+	and5.saout            CORRECT
+	appel-param1.saout    CORRECT
+	appel-param2.saout    CORRECT
+	appel-param3.saout    CORRECT
+	appel-retour1.saout   CORRECT
+	appel1.saout          CORRECT
+	appel2.saout          CORRECT
+	appel3.saout          CORRECT
+	div1.saout            CORRECT
+	div2.saout            CORRECT
+	div3.saout            CORRECT
+	div4.saout            CORRECT
+	ecrire1.saout         CORRECT
+	ecrire2.saout         CORRECT
+	egal1.saout           CORRECT
+	egal2.saout           CORRECT
+	egal3.saout           CORRECT
+	inf1.saout            CORRECT
+	inf2.saout            CORRECT
+	inf3.saout            CORRECT
+	mult1.saout           CORRECT
+	mult2.saout           CORRECT
+	mult3.saout           CORRECT
+	not1.saout            CORRECT
+	not2.saout            CORRECT
+	not3.saout            CORRECT
+	or1.saout             CORRECT
+	or2.saout             CORRECT
+	or3.saout             CORRECT
+	or4.saout             CORRECT
+	or5.saout             CORRECT
+	parenth1.saout        CORRECT
+	parenth2.saout        CORRECT
+	prio34-1.saout        CORRECT
+	prio34-2.saout        CORRECT
+	prio34-3.saout        CORRECT
+	prio34-4.saout        CORRECT
+	prio45-1.saout        CORRECT
+	prio45-2.saout        CORRECT
+	prio45-3.saout        CORRECT
+	prio45-4.saout        CORRECT
+	prio56-1.saout        CORRECT
+	prio56-2.saout        CORRECT
+	prio67-1.saout        CORRECT
+	prio67-2.saout        CORRECT
+	rec1.saout            CORRECT
+	si1.saout             CORRECT
+	si2.saout             CORRECT
+	si3.saout             CORRECT
+	si4.saout             CORRECT
+	si5.saout             CORRECT
+	sub1.saout            CORRECT
+	sub2.saout            CORRECT
+	sub3.saout            CORRECT
+	tab1.saout            CORRECT
+	tab2.saout            CORRECT
+	tab3.saout            CORRECT
+	tab4.saout            CORRECT
+	tantque1.saout        CORRECT
+	tantque2.saout        CORRECT
+	tri.saout             CORRECT
+	varglob1.saout        CORRECT
+	varglob2.saout        CORRECT
+	varglob3.saout        CORRECT
+	varglob4.saout        CORRECT
+	varloc1.saout         CORRECT
+	varloc2.saout         CORRECT
+	varloc3.saout         CORRECT
+	varloc4.saout         CORRECT
+	varloc5.saout         CORRECT
 Évaluation de Diff de c3a :
 0/79 correct (  0.00%)
-	add1.c3a            INCORRECT
-	add2.c3a            INCORRECT
-	affect1.c3a         INCORRECT
-	affect2.c3a         INCORRECT
-	and1.c3a            INCORRECT
-	and2.c3a            INCORRECT
-	and3.c3a            INCORRECT
-	and4.c3a            INCORRECT
-	and5.c3a            INCORRECT
-	appel-retour1.c3a   INCORRECT
-	appel1.c3a          INCORRECT
-	appel2.c3a          INCORRECT
-	appel3.c3a          INCORRECT
-	div1.c3a            INCORRECT
-	div2.c3a            INCORRECT
-	div3.c3a            INCORRECT
-	div4.c3a            INCORRECT
-	ecrire1.c3a         INCORRECT
-	ecrire2.c3a         INCORRECT
-	mult1.c3a           INCORRECT
-	mult2.c3a           INCORRECT
-	mult3.c3a           INCORRECT
-	not1.c3a            INCORRECT
-	not2.c3a            INCORRECT
-	not3.c3a            INCORRECT
-	or1.c3a             INCORRECT
-	or2.c3a             INCORRECT
-	or3.c3a             INCORRECT
-	or4.c3a             INCORRECT
-	or5.c3a             INCORRECT
-	parenth1.c3a        INCORRECT
-	parenth2.c3a        INCORRECT
-	prio34-1.c3a        INCORRECT
-	prio34-2.c3a        INCORRECT
-	prio34-3.c3a        INCORRECT
-	prio34-4.c3a        INCORRECT
-	prio56-2.c3a        INCORRECT
-	prio67-1.c3a        INCORRECT
-	prio67-2.c3a        INCORRECT
-	si1.c3a             INCORRECT
-	si2.c3a             INCORRECT
-	si3.c3a             INCORRECT
-	si4.c3a             INCORRECT
-	si5.c3a             INCORRECT
-	sub1.c3a            INCORRECT
-	sub2.c3a            INCORRECT
-	sub3.c3a            INCORRECT
-	tab1.c3a            INCORRECT
-	tab2.c3a            INCORRECT
-	tab3.c3a            INCORRECT
-	tab4.c3a            INCORRECT
-	varglob1.c3a        INCORRECT
-	varglob2.c3a        INCORRECT
-	varglob3.c3a        INCORRECT
-	varglob4.c3a        INCORRECT
-	varloc1.c3a         INCORRECT
-	varloc2.c3a         INCORRECT
-	varloc3.c3a         INCORRECT
-	varloc4.c3a         INCORRECT
-	varloc5.c3a         INCORRECT
-	affect3.c3a        NON-EXISTANT
-	appel-param1.c3a   NON-EXISTANT
-	appel-param2.c3a   NON-EXISTANT
-	appel-param3.c3a   NON-EXISTANT
-	egal1.c3a          NON-EXISTANT
-	egal2.c3a          NON-EXISTANT
-	egal3.c3a          NON-EXISTANT
-	inf1.c3a           NON-EXISTANT
-	inf2.c3a           NON-EXISTANT
-	inf3.c3a           NON-EXISTANT
-	prio45-1.c3a       NON-EXISTANT
-	prio45-2.c3a       NON-EXISTANT
-	prio45-3.c3a       NON-EXISTANT
-	prio45-4.c3a       NON-EXISTANT
-	prio56-1.c3a       NON-EXISTANT
-	rec1.c3a           NON-EXISTANT
-	tantque1.c3a       NON-EXISTANT
-	tantque2.c3a       NON-EXISTANT
-	tri.c3a            NON-EXISTANT
+	add1.c3a       INCORRECT
+	add2.c3a       INCORRECT
+	affect1.c3a    INCORRECT
+	affect2.c3a    INCORRECT
+	and1.c3a       INCORRECT
+	and2.c3a       INCORRECT
+	and3.c3a       INCORRECT
+	and4.c3a       INCORRECT
+	and5.c3a       INCORRECT
+	appel1.c3a     INCORRECT
+	appel2.c3a     INCORRECT
+	appel3.c3a     INCORRECT
+	div1.c3a       INCORRECT
+	div2.c3a       INCORRECT
+	div3.c3a       INCORRECT
+	div4.c3a       INCORRECT
+	ecrire1.c3a    INCORRECT
+	ecrire2.c3a    INCORRECT
+	egal1.c3a      INCORRECT
+	egal2.c3a      INCORRECT
+	egal3.c3a      INCORRECT
+	inf1.c3a       INCORRECT
+	inf2.c3a       INCORRECT
+	inf3.c3a       INCORRECT
+	mult1.c3a      INCORRECT
+	mult2.c3a      INCORRECT
+	mult3.c3a      INCORRECT
+	not1.c3a       INCORRECT
+	not2.c3a       INCORRECT
+	not3.c3a       INCORRECT
+	or1.c3a        INCORRECT
+	or2.c3a        INCORRECT
+	or3.c3a        INCORRECT
+	or4.c3a        INCORRECT
+	or5.c3a        INCORRECT
+	parenth1.c3a   INCORRECT
+	parenth2.c3a   INCORRECT
+	prio34-1.c3a   INCORRECT
+	prio34-2.c3a   INCORRECT
+	prio34-3.c3a   INCORRECT
+	prio34-4.c3a   INCORRECT
+	prio45-1.c3a   INCORRECT
+	prio45-2.c3a   INCORRECT
+	prio45-3.c3a   INCORRECT
+	prio45-4.c3a   INCORRECT
+	prio56-1.c3a   INCORRECT
+	prio56-2.c3a   INCORRECT
+	prio67-1.c3a   INCORRECT
+	prio67-2.c3a   INCORRECT
+	rec1.c3a       INCORRECT
+	si1.c3a        INCORRECT
+	si2.c3a        INCORRECT
+	si3.c3a        INCORRECT
+	si4.c3a        INCORRECT
+	si5.c3a        INCORRECT
+	sub1.c3a       INCORRECT
+	sub2.c3a       INCORRECT
+	sub3.c3a       INCORRECT
+	tab1.c3a       INCORRECT
+	tab2.c3a       INCORRECT
+	tab3.c3a       INCORRECT
+	tab4.c3a       INCORRECT
+	tantque1.c3a   INCORRECT
+	tantque2.c3a   INCORRECT
+	varglob1.c3a   INCORRECT
+	varglob2.c3a   INCORRECT
+	varglob3.c3a   INCORRECT
+	varglob4.c3a   INCORRECT
+	varloc1.c3a    INCORRECT
+	varloc2.c3a    INCORRECT
+	varloc3.c3a    INCORRECT
+	varloc4.c3a    INCORRECT
+	varloc5.c3a    INCORRECT
+	affect3.c3a         NON-EXISTANT
+	appel-param1.c3a    NON-EXISTANT
+	appel-param2.c3a    NON-EXISTANT
+	appel-param3.c3a    NON-EXISTANT
+	appel-retour1.c3a   NON-EXISTANT
+	tri.c3a             NON-EXISTANT
 Évaluation de Execution du c3a :
 0/79 correct (  0.00%)
-	add1.c3aout            INCORRECT
-	add2.c3aout            INCORRECT
-	affect1.c3aout         INCORRECT
-	affect2.c3aout         INCORRECT
-	and1.c3aout            INCORRECT
-	and2.c3aout            INCORRECT
-	and3.c3aout            INCORRECT
-	and4.c3aout            INCORRECT
-	and5.c3aout            INCORRECT
-	appel-retour1.c3aout   INCORRECT
-	appel1.c3aout          INCORRECT
-	appel2.c3aout          INCORRECT
-	appel3.c3aout          INCORRECT
-	div1.c3aout            INCORRECT
-	div2.c3aout            INCORRECT
-	div3.c3aout            INCORRECT
-	div4.c3aout            INCORRECT
-	ecrire1.c3aout         INCORRECT
-	ecrire2.c3aout         INCORRECT
-	mult1.c3aout           INCORRECT
-	mult2.c3aout           INCORRECT
-	mult3.c3aout           INCORRECT
-	not1.c3aout            INCORRECT
-	not2.c3aout            INCORRECT
-	not3.c3aout            INCORRECT
-	or1.c3aout             INCORRECT
-	or2.c3aout             INCORRECT
-	or3.c3aout             INCORRECT
-	or4.c3aout             INCORRECT
-	or5.c3aout             INCORRECT
-	parenth1.c3aout        INCORRECT
-	parenth2.c3aout        INCORRECT
-	prio34-1.c3aout        INCORRECT
-	prio34-2.c3aout        INCORRECT
-	prio34-3.c3aout        INCORRECT
-	prio34-4.c3aout        INCORRECT
-	prio56-2.c3aout        INCORRECT
-	prio67-1.c3aout        INCORRECT
-	prio67-2.c3aout        INCORRECT
-	si1.c3aout             INCORRECT
-	si2.c3aout             INCORRECT
-	si3.c3aout             INCORRECT
-	si4.c3aout             INCORRECT
-	si5.c3aout             INCORRECT
-	sub1.c3aout            INCORRECT
-	sub2.c3aout            INCORRECT
-	sub3.c3aout            INCORRECT
-	tab1.c3aout            INCORRECT
-	tab2.c3aout            INCORRECT
-	tab3.c3aout            INCORRECT
-	tab4.c3aout            INCORRECT
-	varglob1.c3aout        INCORRECT
-	varglob2.c3aout        INCORRECT
-	varglob3.c3aout        INCORRECT
-	varglob4.c3aout        INCORRECT
-	varloc1.c3aout         INCORRECT
-	varloc2.c3aout         INCORRECT
-	varloc3.c3aout         INCORRECT
-	varloc4.c3aout         INCORRECT
-	varloc5.c3aout         INCORRECT
-	affect3.c3aout        NON-EXISTANT
-	appel-param1.c3aout   NON-EXISTANT
-	appel-param2.c3aout   NON-EXISTANT
-	appel-param3.c3aout   NON-EXISTANT
-	egal1.c3aout          NON-EXISTANT
-	egal2.c3aout          NON-EXISTANT
-	egal3.c3aout          NON-EXISTANT
-	inf1.c3aout           NON-EXISTANT
-	inf2.c3aout           NON-EXISTANT
-	inf3.c3aout           NON-EXISTANT
-	prio45-1.c3aout       NON-EXISTANT
-	prio45-2.c3aout       NON-EXISTANT
-	prio45-3.c3aout       NON-EXISTANT
-	prio45-4.c3aout       NON-EXISTANT
-	prio56-1.c3aout       NON-EXISTANT
-	rec1.c3aout           NON-EXISTANT
-	tantque1.c3aout       NON-EXISTANT
-	tantque2.c3aout       NON-EXISTANT
-	tri.c3aout            NON-EXISTANT
+	add1.c3aout       INCORRECT
+	add2.c3aout       INCORRECT
+	affect1.c3aout    INCORRECT
+	affect2.c3aout    INCORRECT
+	and1.c3aout       INCORRECT
+	and2.c3aout       INCORRECT
+	and3.c3aout       INCORRECT
+	and4.c3aout       INCORRECT
+	and5.c3aout       INCORRECT
+	appel1.c3aout     INCORRECT
+	appel2.c3aout     INCORRECT
+	appel3.c3aout     INCORRECT
+	div1.c3aout       INCORRECT
+	div2.c3aout       INCORRECT
+	div3.c3aout       INCORRECT
+	div4.c3aout       INCORRECT
+	ecrire1.c3aout    INCORRECT
+	ecrire2.c3aout    INCORRECT
+	egal1.c3aout      INCORRECT
+	egal2.c3aout      INCORRECT
+	egal3.c3aout      INCORRECT
+	inf1.c3aout       INCORRECT
+	inf2.c3aout       INCORRECT
+	inf3.c3aout       INCORRECT
+	mult1.c3aout      INCORRECT
+	mult2.c3aout      INCORRECT
+	mult3.c3aout      INCORRECT
+	not1.c3aout       INCORRECT
+	not2.c3aout       INCORRECT
+	not3.c3aout       INCORRECT
+	or1.c3aout        INCORRECT
+	or2.c3aout        INCORRECT
+	or3.c3aout        INCORRECT
+	or4.c3aout        INCORRECT
+	or5.c3aout        INCORRECT
+	parenth1.c3aout   INCORRECT
+	parenth2.c3aout   INCORRECT
+	prio34-1.c3aout   INCORRECT
+	prio34-2.c3aout   INCORRECT
+	prio34-3.c3aout   INCORRECT
+	prio34-4.c3aout   INCORRECT
+	prio45-1.c3aout   INCORRECT
+	prio45-2.c3aout   INCORRECT
+	prio45-3.c3aout   INCORRECT
+	prio45-4.c3aout   INCORRECT
+	prio56-1.c3aout   INCORRECT
+	prio56-2.c3aout   INCORRECT
+	prio67-1.c3aout   INCORRECT
+	prio67-2.c3aout   INCORRECT
+	rec1.c3aout       INCORRECT
+	si1.c3aout        INCORRECT
+	si2.c3aout        INCORRECT
+	si3.c3aout        INCORRECT
+	si4.c3aout        INCORRECT
+	si5.c3aout        INCORRECT
+	sub1.c3aout       INCORRECT
+	sub2.c3aout       INCORRECT
+	sub3.c3aout       INCORRECT
+	tab1.c3aout       INCORRECT
+	tab2.c3aout       INCORRECT
+	tab3.c3aout       INCORRECT
+	tab4.c3aout       INCORRECT
+	tantque1.c3aout   INCORRECT
+	tantque2.c3aout   INCORRECT
+	varglob1.c3aout   INCORRECT
+	varglob2.c3aout   INCORRECT
+	varglob3.c3aout   INCORRECT
+	varglob4.c3aout   INCORRECT
+	varloc1.c3aout    INCORRECT
+	varloc2.c3aout    INCORRECT
+	varloc3.c3aout    INCORRECT
+	varloc4.c3aout    INCORRECT
+	varloc5.c3aout    INCORRECT
+	affect3.c3aout         NON-EXISTANT
+	appel-param1.c3aout    NON-EXISTANT
+	appel-param2.c3aout    NON-EXISTANT
+	appel-param3.c3aout    NON-EXISTANT
+	appel-retour1.c3aout   NON-EXISTANT
+	tri.c3aout             NON-EXISTANT
 Évaluation de Diff de pre-nasm :
 0/79 correct (  0.00%)
 Évaluation de Execution du pre-nasm :
@@ -423,7 +423,7 @@
 	double_dec2.l   INCORRECT
 	double_dec4.l   INCORRECT
 Évaluation de ERR_TYPE :
-36/45 correct ( 80.00%)
+37/45 correct ( 82.22%)
 	add1.l       CORRECT
 	add2.l       CORRECT
 	add3.l       CORRECT
@@ -443,6 +443,7 @@
 	egal3.l      CORRECT
 	inf1.l       CORRECT
 	inf2.l       CORRECT
+	inf3.l       CORRECT
 	inf4.l       CORRECT
 	mult1.l      CORRECT
 	mult2.l      CORRECT
@@ -466,7 +467,6 @@
 	appel2.l    INCORRECT
 	appel3.l    INCORRECT
 	appel4.l    INCORRECT
-	inf3.l      INCORRECT
 	retour1.l   INCORRECT
 	retour2.l   INCORRECT
 ------------------------------EVALUATION ERRORS------------------------------
@@ -554,15 +554,6 @@ ERROR evaluateC3a for input and5.l : 'Exception in thread "main" java.lang.NullP
 	at C3aVM.main(C3aVM.java:59)
 '
 
-ERROR evaluateC3a for input appel-retour1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
-	at c3a.C3aEval.visit(C3aEval.java:342)
-	at c3a.C3aEval.visit(C3aEval.java:8)
-	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
-	at c3a.C3aEval.<init>(C3aEval.java:69)
-	at C3aVM.run(C3aVM.java:31)
-	at C3aVM.main(C3aVM.java:59)
-'
-
 ERROR evaluateC3a for input appel1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
 	at c3a.C3aEval.visit(C3aEval.java:342)
 	at c3a.C3aEval.visit(C3aEval.java:8)
@@ -636,6 +627,60 @@ ERROR evaluateC3a for input ecrire1.l : 'Exception in thread "main" java.lang.Nu
 '
 
 ERROR evaluateC3a for input ecrire2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input egal1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input egal2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input egal3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input inf1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input inf2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input inf3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
 	at c3a.C3aEval.visit(C3aEval.java:342)
 	at c3a.C3aEval.visit(C3aEval.java:8)
 	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
@@ -797,6 +842,51 @@ ERROR evaluateC3a for input prio34-4.l : 'Exception in thread "main" java.lang.N
 	at C3aVM.main(C3aVM.java:59)
 '
 
+ERROR evaluateC3a for input prio45-1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input prio45-2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input prio45-3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input prio45-4.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input prio56-1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
 ERROR evaluateC3a for input prio56-2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
 	at c3a.C3aEval.visit(C3aEval.java:342)
 	at c3a.C3aEval.visit(C3aEval.java:8)
@@ -816,6 +906,15 @@ ERROR evaluateC3a for input prio67-1.l : 'Exception in thread "main" java.lang.N
 '
 
 ERROR evaluateC3a for input prio67-2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input rec1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
 	at c3a.C3aEval.visit(C3aEval.java:342)
 	at c3a.C3aEval.visit(C3aEval.java:8)
 	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
@@ -939,6 +1038,24 @@ ERROR evaluateC3a for input tab4.l : 'Exception in thread "main" java.lang.NullP
 	at c3a.C3aEval.visit(C3aEval.java:306)
 	at c3a.C3aEval.visit(C3aEval.java:8)
 	at c3a.C3aInstAffect.accept(C3aInstAffect.java:22)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input tantque1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input tantque2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
 	at c3a.C3aEval.<init>(C3aEval.java:69)
 	at C3aVM.run(C3aVM.java:31)
 	at C3aVM.main(C3aVM.java:59)
