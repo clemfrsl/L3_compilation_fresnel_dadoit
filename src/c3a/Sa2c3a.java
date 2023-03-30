@@ -46,7 +46,6 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
         return null;
     }
 
-    //todo
     // DEC -> var id taille
     public C3aOperand visit(SaDecTab node) throws Exception{
         defaultIn(node);
@@ -65,24 +64,27 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
     public C3aOperand visit(SaExpInt node) throws Exception
     {
         defaultIn(node);
+        C3aOperand result = new C3aConstant(node.getVal());
         defaultOut(node);
-        return null;
+        return result;
     }
 
     // EXP -> vrai
     public C3aOperand visit(SaExpVrai node) throws Exception
     {
         defaultIn(node);
+        C3aOperand result = new C3aBooleanConstant(Boolean.TRUE);
         defaultOut(node);
-        return null;
+        return result;
     }
 
     // EXP -> faux
     public C3aOperand visit(SaExpFaux node) throws Exception
     {
         defaultIn(node);
+        C3aOperand result = new C3aBooleanConstant(Boolean.FALSE);
         defaultOut(node);
-        return null;
+        return result;
     }
 
     public C3aOperand visit(SaExpVar node) throws Exception
@@ -133,7 +135,6 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
         c3a.ajouteInst(new C3aInstFEnd(""));
         defaultOut(node);
         return null;
-        //todo
     }
 
     // DEC -> var id
@@ -184,17 +185,28 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
     public C3aOperand visit(SaAppel node) throws Exception
     {
         defaultIn(node);
+        C3aOperand result = c3a.newTemp();
         if(node.getArguments() != null) node.getArguments().accept(this);
+        C3aFunction op = new C3aFunction(node.tsItem);
+        c3a.ajouteInst(new C3aInstCall(op, result, ""));
         defaultOut(node);
         return null;
+
+
+
+        /*c3a.ajouteInst(new C3aInstFBegin(node.tsItem,""));
+        if(node.getArguments() != null) node.getArguments().accept(this);
+        c3a.ajouteInst(new C3aInstFEnd(""));
+        defaultOut(node);
+        return null;*/
     }
 
     public C3aOperand visit(SaExpAppel node) throws Exception
     {
         defaultIn(node);
-        node.getVal().accept(this);
+        C3aOperand result =   node.getVal().accept(this);
         defaultOut(node);
-        return null;
+        return result;
     }
 
     // EXP -> add EXP EXP
@@ -245,7 +257,6 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
     }
 
     // EXP -> inf EXP EXP
-    //todo
     public C3aOperand visit(SaExpInf node) throws Exception
     {
         defaultIn(node);
@@ -275,7 +286,6 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
         return result;
     }
 
-    //todo
     // EXP -> and EXP EXP
     public C3aOperand visit(SaExpAnd node) throws Exception
     {

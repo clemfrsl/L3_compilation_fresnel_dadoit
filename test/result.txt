@@ -243,166 +243,166 @@
 	varloc5.saout         CORRECT
 Évaluation de Diff de c3a :
 0/79 correct (  0.00%)
-	add1.c3a       INCORRECT
-	add2.c3a       INCORRECT
-	affect1.c3a    INCORRECT
-	affect2.c3a    INCORRECT
-	and1.c3a       INCORRECT
-	and2.c3a       INCORRECT
-	and3.c3a       INCORRECT
-	and4.c3a       INCORRECT
-	and5.c3a       INCORRECT
-	appel1.c3a     INCORRECT
-	appel2.c3a     INCORRECT
-	appel3.c3a     INCORRECT
-	div1.c3a       INCORRECT
-	div2.c3a       INCORRECT
-	div3.c3a       INCORRECT
-	div4.c3a       INCORRECT
-	ecrire1.c3a    INCORRECT
-	ecrire2.c3a    INCORRECT
-	egal1.c3a      INCORRECT
-	egal2.c3a      INCORRECT
-	egal3.c3a      INCORRECT
-	inf1.c3a       INCORRECT
-	inf2.c3a       INCORRECT
-	inf3.c3a       INCORRECT
-	mult1.c3a      INCORRECT
-	mult2.c3a      INCORRECT
-	mult3.c3a      INCORRECT
-	not1.c3a       INCORRECT
-	not2.c3a       INCORRECT
-	not3.c3a       INCORRECT
-	or1.c3a        INCORRECT
-	or2.c3a        INCORRECT
-	or3.c3a        INCORRECT
-	or4.c3a        INCORRECT
-	or5.c3a        INCORRECT
-	parenth1.c3a   INCORRECT
-	parenth2.c3a   INCORRECT
-	prio34-1.c3a   INCORRECT
-	prio34-2.c3a   INCORRECT
-	prio34-3.c3a   INCORRECT
-	prio34-4.c3a   INCORRECT
-	prio45-1.c3a   INCORRECT
-	prio45-2.c3a   INCORRECT
-	prio45-3.c3a   INCORRECT
-	prio45-4.c3a   INCORRECT
-	prio56-1.c3a   INCORRECT
-	prio56-2.c3a   INCORRECT
-	prio67-1.c3a   INCORRECT
-	prio67-2.c3a   INCORRECT
-	rec1.c3a       INCORRECT
-	si1.c3a        INCORRECT
-	si2.c3a        INCORRECT
-	si3.c3a        INCORRECT
-	si4.c3a        INCORRECT
-	si5.c3a        INCORRECT
-	sub1.c3a       INCORRECT
-	sub2.c3a       INCORRECT
-	sub3.c3a       INCORRECT
-	tab1.c3a       INCORRECT
-	tab2.c3a       INCORRECT
-	tab3.c3a       INCORRECT
-	tab4.c3a       INCORRECT
-	tantque1.c3a   INCORRECT
-	tantque2.c3a   INCORRECT
-	varglob1.c3a   INCORRECT
-	varglob2.c3a   INCORRECT
-	varglob3.c3a   INCORRECT
-	varglob4.c3a   INCORRECT
-	varloc1.c3a    INCORRECT
-	varloc2.c3a    INCORRECT
-	varloc3.c3a    INCORRECT
-	varloc4.c3a    INCORRECT
-	varloc5.c3a    INCORRECT
-	affect3.c3a         NON-EXISTANT
-	appel-param1.c3a    NON-EXISTANT
-	appel-param2.c3a    NON-EXISTANT
-	appel-param3.c3a    NON-EXISTANT
-	appel-retour1.c3a   NON-EXISTANT
-	tri.c3a             NON-EXISTANT
+	add1.c3a            INCORRECT
+	add2.c3a            INCORRECT
+	affect1.c3a         INCORRECT
+	affect2.c3a         INCORRECT
+	affect3.c3a         INCORRECT
+	and1.c3a            INCORRECT
+	and2.c3a            INCORRECT
+	and3.c3a            INCORRECT
+	and4.c3a            INCORRECT
+	and5.c3a            INCORRECT
+	appel-param1.c3a    INCORRECT
+	appel-param2.c3a    INCORRECT
+	appel-param3.c3a    INCORRECT
+	appel-retour1.c3a   INCORRECT
+	appel1.c3a          INCORRECT
+	appel2.c3a          INCORRECT
+	appel3.c3a          INCORRECT
+	div1.c3a            INCORRECT
+	div2.c3a            INCORRECT
+	div3.c3a            INCORRECT
+	div4.c3a            INCORRECT
+	ecrire1.c3a         INCORRECT
+	ecrire2.c3a         INCORRECT
+	egal1.c3a           INCORRECT
+	egal2.c3a           INCORRECT
+	egal3.c3a           INCORRECT
+	inf1.c3a            INCORRECT
+	inf2.c3a            INCORRECT
+	inf3.c3a            INCORRECT
+	mult1.c3a           INCORRECT
+	mult2.c3a           INCORRECT
+	mult3.c3a           INCORRECT
+	not1.c3a            INCORRECT
+	not2.c3a            INCORRECT
+	not3.c3a            INCORRECT
+	or1.c3a             INCORRECT
+	or2.c3a             INCORRECT
+	or3.c3a             INCORRECT
+	or4.c3a             INCORRECT
+	or5.c3a             INCORRECT
+	parenth1.c3a        INCORRECT
+	parenth2.c3a        INCORRECT
+	prio34-1.c3a        INCORRECT
+	prio34-2.c3a        INCORRECT
+	prio34-3.c3a        INCORRECT
+	prio34-4.c3a        INCORRECT
+	prio45-1.c3a        INCORRECT
+	prio45-2.c3a        INCORRECT
+	prio45-3.c3a        INCORRECT
+	prio45-4.c3a        INCORRECT
+	prio56-1.c3a        INCORRECT
+	prio56-2.c3a        INCORRECT
+	prio67-1.c3a        INCORRECT
+	prio67-2.c3a        INCORRECT
+	rec1.c3a            INCORRECT
+	si1.c3a             INCORRECT
+	si2.c3a             INCORRECT
+	si3.c3a             INCORRECT
+	si4.c3a             INCORRECT
+	si5.c3a             INCORRECT
+	sub1.c3a            INCORRECT
+	sub2.c3a            INCORRECT
+	sub3.c3a            INCORRECT
+	tab1.c3a            INCORRECT
+	tab2.c3a            INCORRECT
+	tab3.c3a            INCORRECT
+	tab4.c3a            INCORRECT
+	tantque1.c3a        INCORRECT
+	tantque2.c3a        INCORRECT
+	tri.c3a             INCORRECT
+	varglob1.c3a        INCORRECT
+	varglob2.c3a        INCORRECT
+	varglob3.c3a        INCORRECT
+	varglob4.c3a        INCORRECT
+	varloc1.c3a         INCORRECT
+	varloc2.c3a         INCORRECT
+	varloc3.c3a         INCORRECT
+	varloc4.c3a         INCORRECT
+	varloc5.c3a         INCORRECT
 Évaluation de Execution du c3a :
 0/79 correct (  0.00%)
-	add1.c3aout       INCORRECT
-	add2.c3aout       INCORRECT
-	affect1.c3aout    INCORRECT
-	affect2.c3aout    INCORRECT
-	and1.c3aout       INCORRECT
-	and2.c3aout       INCORRECT
-	and3.c3aout       INCORRECT
-	and4.c3aout       INCORRECT
-	and5.c3aout       INCORRECT
-	appel1.c3aout     INCORRECT
-	appel2.c3aout     INCORRECT
-	appel3.c3aout     INCORRECT
-	div1.c3aout       INCORRECT
-	div2.c3aout       INCORRECT
-	div3.c3aout       INCORRECT
-	div4.c3aout       INCORRECT
-	ecrire1.c3aout    INCORRECT
-	ecrire2.c3aout    INCORRECT
-	egal1.c3aout      INCORRECT
-	egal2.c3aout      INCORRECT
-	egal3.c3aout      INCORRECT
-	inf1.c3aout       INCORRECT
-	inf2.c3aout       INCORRECT
-	inf3.c3aout       INCORRECT
-	mult1.c3aout      INCORRECT
-	mult2.c3aout      INCORRECT
-	mult3.c3aout      INCORRECT
-	not1.c3aout       INCORRECT
-	not2.c3aout       INCORRECT
-	not3.c3aout       INCORRECT
-	or1.c3aout        INCORRECT
-	or2.c3aout        INCORRECT
-	or3.c3aout        INCORRECT
-	or4.c3aout        INCORRECT
-	or5.c3aout        INCORRECT
-	parenth1.c3aout   INCORRECT
-	parenth2.c3aout   INCORRECT
-	prio34-1.c3aout   INCORRECT
-	prio34-2.c3aout   INCORRECT
-	prio34-3.c3aout   INCORRECT
-	prio34-4.c3aout   INCORRECT
-	prio45-1.c3aout   INCORRECT
-	prio45-2.c3aout   INCORRECT
-	prio45-3.c3aout   INCORRECT
-	prio45-4.c3aout   INCORRECT
-	prio56-1.c3aout   INCORRECT
-	prio56-2.c3aout   INCORRECT
-	prio67-1.c3aout   INCORRECT
-	prio67-2.c3aout   INCORRECT
-	rec1.c3aout       INCORRECT
-	si1.c3aout        INCORRECT
-	si2.c3aout        INCORRECT
-	si3.c3aout        INCORRECT
-	si4.c3aout        INCORRECT
-	si5.c3aout        INCORRECT
-	sub1.c3aout       INCORRECT
-	sub2.c3aout       INCORRECT
-	sub3.c3aout       INCORRECT
-	tab1.c3aout       INCORRECT
-	tab2.c3aout       INCORRECT
-	tab3.c3aout       INCORRECT
-	tab4.c3aout       INCORRECT
-	tantque1.c3aout   INCORRECT
-	tantque2.c3aout   INCORRECT
-	varglob1.c3aout   INCORRECT
-	varglob2.c3aout   INCORRECT
-	varglob3.c3aout   INCORRECT
-	varglob4.c3aout   INCORRECT
-	varloc1.c3aout    INCORRECT
-	varloc2.c3aout    INCORRECT
-	varloc3.c3aout    INCORRECT
-	varloc4.c3aout    INCORRECT
-	varloc5.c3aout    INCORRECT
-	affect3.c3aout         NON-EXISTANT
-	appel-param1.c3aout    NON-EXISTANT
-	appel-param2.c3aout    NON-EXISTANT
-	appel-param3.c3aout    NON-EXISTANT
-	appel-retour1.c3aout   NON-EXISTANT
-	tri.c3aout             NON-EXISTANT
+	add1.c3aout            INCORRECT
+	add2.c3aout            INCORRECT
+	affect1.c3aout         INCORRECT
+	affect2.c3aout         INCORRECT
+	affect3.c3aout         INCORRECT
+	and1.c3aout            INCORRECT
+	and2.c3aout            INCORRECT
+	and3.c3aout            INCORRECT
+	and4.c3aout            INCORRECT
+	and5.c3aout            INCORRECT
+	appel-param1.c3aout    INCORRECT
+	appel-param2.c3aout    INCORRECT
+	appel-param3.c3aout    INCORRECT
+	appel-retour1.c3aout   INCORRECT
+	appel1.c3aout          INCORRECT
+	appel2.c3aout          INCORRECT
+	appel3.c3aout          INCORRECT
+	div1.c3aout            INCORRECT
+	div2.c3aout            INCORRECT
+	div3.c3aout            INCORRECT
+	div4.c3aout            INCORRECT
+	ecrire1.c3aout         INCORRECT
+	ecrire2.c3aout         INCORRECT
+	egal1.c3aout           INCORRECT
+	egal2.c3aout           INCORRECT
+	egal3.c3aout           INCORRECT
+	inf1.c3aout            INCORRECT
+	inf2.c3aout            INCORRECT
+	inf3.c3aout            INCORRECT
+	mult1.c3aout           INCORRECT
+	mult2.c3aout           INCORRECT
+	mult3.c3aout           INCORRECT
+	not1.c3aout            INCORRECT
+	not2.c3aout            INCORRECT
+	not3.c3aout            INCORRECT
+	or1.c3aout             INCORRECT
+	or2.c3aout             INCORRECT
+	or3.c3aout             INCORRECT
+	or4.c3aout             INCORRECT
+	or5.c3aout             INCORRECT
+	parenth1.c3aout        INCORRECT
+	parenth2.c3aout        INCORRECT
+	prio34-1.c3aout        INCORRECT
+	prio34-2.c3aout        INCORRECT
+	prio34-3.c3aout        INCORRECT
+	prio34-4.c3aout        INCORRECT
+	prio45-1.c3aout        INCORRECT
+	prio45-2.c3aout        INCORRECT
+	prio45-3.c3aout        INCORRECT
+	prio45-4.c3aout        INCORRECT
+	prio56-1.c3aout        INCORRECT
+	prio56-2.c3aout        INCORRECT
+	prio67-1.c3aout        INCORRECT
+	prio67-2.c3aout        INCORRECT
+	rec1.c3aout            INCORRECT
+	si1.c3aout             INCORRECT
+	si2.c3aout             INCORRECT
+	si3.c3aout             INCORRECT
+	si4.c3aout             INCORRECT
+	si5.c3aout             INCORRECT
+	sub1.c3aout            INCORRECT
+	sub2.c3aout            INCORRECT
+	sub3.c3aout            INCORRECT
+	tab1.c3aout            INCORRECT
+	tab2.c3aout            INCORRECT
+	tab3.c3aout            INCORRECT
+	tab4.c3aout            INCORRECT
+	tantque1.c3aout        INCORRECT
+	tantque2.c3aout        INCORRECT
+	tri.c3aout             INCORRECT
+	varglob1.c3aout        INCORRECT
+	varglob2.c3aout        INCORRECT
+	varglob3.c3aout        INCORRECT
+	varglob4.c3aout        INCORRECT
+	varloc1.c3aout         INCORRECT
+	varloc2.c3aout         INCORRECT
+	varloc3.c3aout         INCORRECT
+	varloc4.c3aout         INCORRECT
+	varloc5.c3aout         INCORRECT
 Évaluation de Diff de pre-nasm :
 0/79 correct (  0.00%)
 Évaluation de Execution du pre-nasm :
@@ -492,15 +492,24 @@ ERROR evaluateC3a for input affect1.l : 'Exception in thread "main" java.lang.Nu
 	at c3a.C3aEval.visit(C3aEval.java:168)
 	at c3a.C3aEval.visit(C3aEval.java:8)
 	at c3a.C3aVar.accept(C3aVar.java:22)
-	at c3a.C3aEval.visit(C3aEval.java:306)
+	at c3a.C3aEval.visit(C3aEval.java:327)
 	at c3a.C3aEval.visit(C3aEval.java:8)
-	at c3a.C3aInstAffect.accept(C3aInstAffect.java:22)
+	at c3a.C3aInstWrite.accept(C3aInstWrite.java:22)
 	at c3a.C3aEval.<init>(C3aEval.java:69)
 	at C3aVM.run(C3aVM.java:31)
 	at C3aVM.main(C3aVM.java:59)
 '
 
 ERROR evaluateC3a for input affect2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input affect3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
 	at c3a.C3aEval.visit(C3aEval.java:342)
 	at c3a.C3aEval.visit(C3aEval.java:8)
 	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
@@ -546,6 +555,42 @@ ERROR evaluateC3a for input and4.l : 'Exception in thread "main" java.lang.NullP
 '
 
 ERROR evaluateC3a for input and5.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input appel-param1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input appel-param2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input appel-param3.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
+ERROR evaluateC3a for input appel-retour1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
 	at c3a.C3aEval.visit(C3aEval.java:342)
 	at c3a.C3aEval.visit(C3aEval.java:8)
 	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
@@ -999,9 +1044,9 @@ ERROR evaluateC3a for input tab1.l : 'Exception in thread "main" java.lang.NullP
 	at c3a.C3aEval.visit(C3aEval.java:168)
 	at c3a.C3aEval.visit(C3aEval.java:8)
 	at c3a.C3aVar.accept(C3aVar.java:22)
-	at c3a.C3aEval.visit(C3aEval.java:306)
+	at c3a.C3aEval.visit(C3aEval.java:327)
 	at c3a.C3aEval.visit(C3aEval.java:8)
-	at c3a.C3aInstAffect.accept(C3aInstAffect.java:22)
+	at c3a.C3aInstWrite.accept(C3aInstWrite.java:22)
 	at c3a.C3aEval.<init>(C3aEval.java:69)
 	at C3aVM.run(C3aVM.java:31)
 	at C3aVM.main(C3aVM.java:59)
@@ -1011,9 +1056,9 @@ ERROR evaluateC3a for input tab2.l : 'Exception in thread "main" java.lang.NullP
 	at c3a.C3aEval.visit(C3aEval.java:168)
 	at c3a.C3aEval.visit(C3aEval.java:8)
 	at c3a.C3aVar.accept(C3aVar.java:22)
-	at c3a.C3aEval.visit(C3aEval.java:306)
+	at c3a.C3aEval.visit(C3aEval.java:245)
 	at c3a.C3aEval.visit(C3aEval.java:8)
-	at c3a.C3aInstAffect.accept(C3aInstAffect.java:22)
+	at c3a.C3aInstAdd.accept(C3aInstAdd.java:23)
 	at c3a.C3aEval.<init>(C3aEval.java:69)
 	at C3aVM.run(C3aVM.java:31)
 	at C3aVM.main(C3aVM.java:59)
@@ -1023,9 +1068,9 @@ ERROR evaluateC3a for input tab3.l : 'Exception in thread "main" java.lang.NullP
 	at c3a.C3aEval.visit(C3aEval.java:168)
 	at c3a.C3aEval.visit(C3aEval.java:8)
 	at c3a.C3aVar.accept(C3aVar.java:22)
-	at c3a.C3aEval.visit(C3aEval.java:306)
+	at c3a.C3aEval.visit(C3aEval.java:245)
 	at c3a.C3aEval.visit(C3aEval.java:8)
-	at c3a.C3aInstAffect.accept(C3aInstAffect.java:22)
+	at c3a.C3aInstAdd.accept(C3aInstAdd.java:23)
 	at c3a.C3aEval.<init>(C3aEval.java:69)
 	at C3aVM.run(C3aVM.java:31)
 	at C3aVM.main(C3aVM.java:59)
@@ -1035,9 +1080,9 @@ ERROR evaluateC3a for input tab4.l : 'Exception in thread "main" java.lang.NullP
 	at c3a.C3aEval.visit(C3aEval.java:168)
 	at c3a.C3aEval.visit(C3aEval.java:8)
 	at c3a.C3aVar.accept(C3aVar.java:22)
-	at c3a.C3aEval.visit(C3aEval.java:306)
+	at c3a.C3aEval.visit(C3aEval.java:245)
 	at c3a.C3aEval.visit(C3aEval.java:8)
-	at c3a.C3aInstAffect.accept(C3aInstAffect.java:22)
+	at c3a.C3aInstAdd.accept(C3aInstAdd.java:23)
 	at c3a.C3aEval.<init>(C3aEval.java:69)
 	at C3aVM.run(C3aVM.java:31)
 	at C3aVM.main(C3aVM.java:59)
@@ -1061,13 +1106,25 @@ ERROR evaluateC3a for input tantque2.l : 'Exception in thread "main" java.lang.N
 	at C3aVM.main(C3aVM.java:59)
 '
 
+ERROR evaluateC3a for input tri.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot read field "adresse" because "<parameter1>.item" is null
+	at c3a.C3aEval.visit(C3aEval.java:168)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aVar.accept(C3aVar.java:22)
+	at c3a.C3aEval.visit(C3aEval.java:273)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstJumpIfLess.accept(C3aInstJumpIfLess.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
+	at C3aVM.run(C3aVM.java:31)
+	at C3aVM.main(C3aVM.java:59)
+'
+
 ERROR evaluateC3a for input varglob1.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot read field "adresse" because "<parameter1>.item" is null
 	at c3a.C3aEval.visit(C3aEval.java:168)
 	at c3a.C3aEval.visit(C3aEval.java:8)
 	at c3a.C3aVar.accept(C3aVar.java:22)
-	at c3a.C3aEval.visit(C3aEval.java:306)
+	at c3a.C3aEval.visit(C3aEval.java:327)
 	at c3a.C3aEval.visit(C3aEval.java:8)
-	at c3a.C3aInstAffect.accept(C3aInstAffect.java:22)
+	at c3a.C3aInstWrite.accept(C3aInstWrite.java:22)
 	at c3a.C3aEval.<init>(C3aEval.java:69)
 	at C3aVM.run(C3aVM.java:31)
 	at C3aVM.main(C3aVM.java:59)
@@ -1077,9 +1134,9 @@ ERROR evaluateC3a for input varglob2.l : 'Exception in thread "main" java.lang.N
 	at c3a.C3aEval.visit(C3aEval.java:168)
 	at c3a.C3aEval.visit(C3aEval.java:8)
 	at c3a.C3aVar.accept(C3aVar.java:22)
-	at c3a.C3aEval.visit(C3aEval.java:306)
+	at c3a.C3aEval.visit(C3aEval.java:245)
 	at c3a.C3aEval.visit(C3aEval.java:8)
-	at c3a.C3aInstAffect.accept(C3aInstAffect.java:22)
+	at c3a.C3aInstAdd.accept(C3aInstAdd.java:23)
 	at c3a.C3aEval.<init>(C3aEval.java:69)
 	at C3aVM.run(C3aVM.java:31)
 	at C3aVM.main(C3aVM.java:59)
@@ -1089,9 +1146,9 @@ ERROR evaluateC3a for input varglob3.l : 'Exception in thread "main" java.lang.N
 	at c3a.C3aEval.visit(C3aEval.java:168)
 	at c3a.C3aEval.visit(C3aEval.java:8)
 	at c3a.C3aVar.accept(C3aVar.java:22)
-	at c3a.C3aEval.visit(C3aEval.java:306)
+	at c3a.C3aEval.visit(C3aEval.java:327)
 	at c3a.C3aEval.visit(C3aEval.java:8)
-	at c3a.C3aInstAffect.accept(C3aInstAffect.java:22)
+	at c3a.C3aInstWrite.accept(C3aInstWrite.java:22)
 	at c3a.C3aEval.<init>(C3aEval.java:69)
 	at C3aVM.run(C3aVM.java:31)
 	at C3aVM.main(C3aVM.java:59)
@@ -1101,9 +1158,9 @@ ERROR evaluateC3a for input varglob4.l : 'Exception in thread "main" java.lang.N
 	at c3a.C3aEval.visit(C3aEval.java:168)
 	at c3a.C3aEval.visit(C3aEval.java:8)
 	at c3a.C3aVar.accept(C3aVar.java:22)
-	at c3a.C3aEval.visit(C3aEval.java:306)
+	at c3a.C3aEval.visit(C3aEval.java:245)
 	at c3a.C3aEval.visit(C3aEval.java:8)
-	at c3a.C3aInstAffect.accept(C3aInstAffect.java:22)
+	at c3a.C3aInstAdd.accept(C3aInstAdd.java:23)
 	at c3a.C3aEval.<init>(C3aEval.java:69)
 	at C3aVM.run(C3aVM.java:31)
 	at C3aVM.main(C3aVM.java:59)
@@ -1149,9 +1206,9 @@ ERROR evaluateC3a for input varloc5.l : 'Exception in thread "main" java.lang.Nu
 	at c3a.C3aEval.visit(C3aEval.java:168)
 	at c3a.C3aEval.visit(C3aEval.java:8)
 	at c3a.C3aVar.accept(C3aVar.java:22)
-	at c3a.C3aEval.visit(C3aEval.java:306)
+	at c3a.C3aEval.visit(C3aEval.java:327)
 	at c3a.C3aEval.visit(C3aEval.java:8)
-	at c3a.C3aInstAffect.accept(C3aInstAffect.java:22)
+	at c3a.C3aInstWrite.accept(C3aInstWrite.java:22)
 	at c3a.C3aEval.<init>(C3aEval.java:69)
 	at C3aVM.run(C3aVM.java:31)
 	at C3aVM.main(C3aVM.java:59)

@@ -175,21 +175,19 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
     public Void visit(SaAppel node) throws Exception
     {
         defaultIn(node);
-        if(node.getArguments().length() != this.fonctionCourante.nbArgs)
-            throw new ErrorException(Error.TYPE, "Error");
-        if(node.getArguments().getTete().getType() != this.fonctionCourante.saDecFonc.getParametres().getTete().getType())
-            throw new ErrorException(Error.TYPE, "Error");
-        SaLExp queue = node.getArguments().getQueue();
-        SaLDecVar queueC = this.fonctionCourante.saDecFonc.getParametres().getQueue();
-        for (int i=0; i<node.getArguments().length(); i++){
-            if(queue.getTete().getType() != queueC.getTete().getType())
+        this.fonctionCourante = node.tsItem;
+        if(node.getArguments() != null) {
+            if (node.getArguments().getTete().getType() != this.fonctionCourante.saDecFonc.getParametres().getTete().getType())
                 throw new ErrorException(Error.TYPE, "Error");
-            queue = queue.getQueue();
-            queueC = queueC.getQueue();
+            SaLExp queue = node.getArguments().getQueue();
+            SaLDecVar queueC = this.fonctionCourante.saDecFonc.getParametres().getQueue();
+            while (queue != null) {
+                if (queue.getTete().getType() != queueC.getTete().getType())
+                    throw new ErrorException(Error.TYPE, "Error");
+                queue = queue.getQueue();
+                queueC = queueC.getQueue();
+            }
         }
-
-        if(node.getArguments() != null)
-            node.getArguments().accept(this);
         defaultOut(node);
         return null;
     }
