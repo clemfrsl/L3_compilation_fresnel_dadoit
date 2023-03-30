@@ -44,12 +44,12 @@ public class Sa2ts extends SaDepthFirstVisitor <Void> {
 		Type typeRetour = node.getTypeRetour();
 		int nbArgs = 0;
 
+		if(this.tableGlobale.getFct(identif) != null)
+			throw new ErrorException(Error.TS, "Function already exist.");
 
 		SaLDecVar maillon;
 		for(maillon = node.getParametres(), nbArgs = 0; maillon != null; maillon = maillon.getQueue(), nbArgs++ );
 
-		if(this.tableGlobale.getFct(identif) != null)
-			throw new ErrorException(Error.TS, "Function already exist.");
 		node.tsItem = tableGlobale.addFct(identif, typeRetour, nbArgs, tableLocaleCourante, node);
 
 		this.context = Context.PARAM;

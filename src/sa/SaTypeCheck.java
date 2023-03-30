@@ -195,7 +195,8 @@ public class SaTypeCheck extends SaDepthFirstVisitor <Void>{
             queueC = queueC.getQueue();
         }
 
-        if(node.getArguments() != null) node.getArguments().accept(this);
+        if(node.getArguments() != null)
+            node.getArguments().accept(this);
         defaultOut(node);
         return null;
     }
