@@ -79,6 +79,16 @@ public class Sa2ts extends SaDepthFirstVisitor <Void> {
 				throw new ErrorException(Error.TS, "Variable already exist.");
 			node.tsItem = tableGlobale.addTab(identif, node.getType(), node.getTaille());
 		}
+		else {
+			if(this.tableLocaleCourante.getVar(identif) != null)
+				throw new ErrorException(Error.TS, "Variable already exist.");
+			if(this.context == Context.LOCAL){
+				tableGlobale.addTab(identif, node.getType(), node.getTaille());
+			}
+			if(this.context == Context.PARAM){
+				tableGlobale.addParam(identif, node.getType());
+			}
+		}
 		defaultOut(node);
 		return null;
 	}
@@ -135,6 +145,10 @@ public class Sa2ts extends SaDepthFirstVisitor <Void> {
 		if(item == null ){
 			throw new ErrorException(Error.TS, "Var not found");
 		}
+		if(!(item instanceof TsItemVarTab))
+			throw new ErrorException(Error.TS, "Error");
+		if(node.getIndice() == null)
+			throw new ErrorException(Error.TS, "Indice not found");
 		node.tsItem = item;
 
 		node.getIndice().accept(this);
