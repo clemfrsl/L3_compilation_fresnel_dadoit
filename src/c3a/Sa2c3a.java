@@ -127,7 +127,7 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
     {
         defaultIn(node);
         //todo
-        c3a.ajouteInst(new C3aInstFBegin(node.tsItem, ""));
+        c3a.ajouteInst(new C3aInstFBegin(node.tsItem, "#entree fonction"));
         if(node.getParametres() != null) node.getParametres().accept(this);
         if(node.getVariable() != null) node.getVariable().accept(this);
         if(node.getCorps() != null) node.getCorps().accept(this);
