@@ -80,7 +80,7 @@
 	varloc4.sa         CORRECT
 	varloc5.sa         CORRECT
 Évaluation de Diff de ts :
-78/79 correct ( 98.73%)
+79/79 correct (100.00%)
 	add1.ts            CORRECT
 	add2.ts            CORRECT
 	affect1.ts         CORRECT
@@ -96,6 +96,7 @@
 	appel-param3.ts    CORRECT
 	appel-retour1.ts   CORRECT
 	appel1.ts          CORRECT
+	appel2.ts          CORRECT
 	appel3.ts          CORRECT
 	div1.ts            CORRECT
 	div2.ts            CORRECT
@@ -159,9 +160,8 @@
 	varloc3.ts         CORRECT
 	varloc4.ts         CORRECT
 	varloc5.ts         CORRECT
-	appel2.ts   INCORRECT
 Évaluation de Execution de sa :
-68/79 correct ( 86.08%)
+72/79 correct ( 91.14%)
 	add1.saout       CORRECT
 	add2.saout       CORRECT
 	affect1.saout    CORRECT
@@ -171,6 +171,9 @@
 	and3.saout       CORRECT
 	and4.saout       CORRECT
 	and5.saout       CORRECT
+	appel1.saout     CORRECT
+	appel2.saout     CORRECT
+	appel3.saout     CORRECT
 	div1.saout       CORRECT
 	div2.saout       CORRECT
 	div3.saout       CORRECT
@@ -230,17 +233,14 @@
 	varloc2.saout    CORRECT
 	varloc3.saout    CORRECT
 	varloc4.saout    CORRECT
+	varloc5.saout    CORRECT
 	affect3.saout         INCORRECT
 	appel-param1.saout    INCORRECT
 	appel-param2.saout    INCORRECT
 	appel-param3.saout    INCORRECT
 	appel-retour1.saout   INCORRECT
-	appel1.saout          INCORRECT
-	appel2.saout          INCORRECT
-	appel3.saout          INCORRECT
 	rec1.saout            INCORRECT
 	tri.saout             INCORRECT
-	varloc5.saout         INCORRECT
 Évaluation de Diff de c3a :
 0/79 correct (  0.00%)
 	add1.c3a            INCORRECT
@@ -572,13 +572,11 @@ ERROR evaluateC3a for input appel1.l : 'Exception in thread "main" java.lang.Nul
 	at C3aVM.main(C3aVM.java:59)
 '
 
-ERROR evaluateC3a for input appel2.l : 'Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-	at java.base/java.util.Objects.checkIndex(Objects.java:359)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at c3a.C3aEval.<init>(C3aEval.java:64)
+ERROR evaluateC3a for input appel2.l : 'Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at c3a.C3aEval.visit(C3aEval.java:342)
+	at c3a.C3aEval.visit(C3aEval.java:8)
+	at c3a.C3aInstCall.accept(C3aInstCall.java:25)
+	at c3a.C3aEval.<init>(C3aEval.java:69)
 	at C3aVM.run(C3aVM.java:31)
 	at C3aVM.main(C3aVM.java:59)
 '

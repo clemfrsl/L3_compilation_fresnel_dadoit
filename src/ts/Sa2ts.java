@@ -146,18 +146,19 @@ public class Sa2ts extends SaDepthFirstVisitor <Void> {
 	public Void visit(SaAppel node) throws Exception
 	{
 		defaultIn(node);
-		TsItemFct item = null;
-		String identif = node.getNom();
-		int nbArg = node.getArguments().length();
-		item = tableGlobale.getFct(identif);
-		if( item != null){
-			node.tsItem = item;
-			if(nbArg != tableGlobale.getFct(identif).getNbArgs())
-				throw new ErrorException(Error.TS, "Wrong number of arguments");
+		SaLExp param = node.getArguments();
+		int taille = 0;
+		if(param != null){
+			param.accept(this);
+			taille = param.length();
 		}
-		else
+		if(tableGlobale.getFct(node.getNom()) == null)
 			throw new ErrorException(Error.TS, "Function does not exist");
+		if(taille != tableGlobale.getFct(node.getNom()).nbArgs)
+			throw new ErrorException(Error.TS, "Wrong number of arguments");
+		node.tsItem = tableGlobale.getFct(node.getNom());
 		defaultOut(node);
 		return null;
+		//todo
 	}
 }

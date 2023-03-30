@@ -126,7 +126,6 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
     public C3aOperand visit(SaDecFonc node) throws Exception
     {
         defaultIn(node);
-        //todo
         c3a.ajouteInst(new C3aInstFBegin(node.tsItem, "#entree fonction"));
         if(node.getParametres() != null) node.getParametres().accept(this);
         if(node.getVariable() != null) node.getVariable().accept(this);
@@ -154,17 +153,6 @@ public class Sa2c3a extends SaDepthFirstVisitor <C3aOperand> {
         defaultOut(node);
         return null;
     }
-
-    // LDEC -> DEC LDEC
-    // LDEC -> null
-    /*    public C3aOperand visit(SaLDec node) throws Exception
-    {
-	defaultIn(node);
-	node.getTete().accept(this);
-	if(node.getQueue() != null) node.getQueue().accept(this);
-	defaultOut(node);
-	return null;
-	}*/
 
     public C3aOperand visit(SaLDecVar node) throws Exception
     {
